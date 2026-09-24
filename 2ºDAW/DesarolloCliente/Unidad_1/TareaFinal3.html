@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TareaFinal - Ejercicio 3</title>
+</head>
+<body>
+     <img src="tf1.3_resultado.JPG" id="imagen" onclick="cambiarImagenes()" />
+     <p>Haga click en la imagen para que muestre la siguiente en la galeria.</p>
+    
+     <script>
+        function cambiarImagenes() {
+            var imagen = document.getElementById('imagen');
+
+            if (imagen.src.match("resultado")) {
+                imagen.src = "images.jpg";
+            } else if (imagen.src.match("images")) {
+                imagen.src = "buses.jpg";
+            } else if (imagen.src.match("buses")) {
+                imagen.src = "tf1.3_resultado.JPG";
+
+            }
+            
+        }
+
+     </script>
+</body>
+</html>

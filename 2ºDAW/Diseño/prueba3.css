@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+menu {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+
+}
+
+menu a {
+    text-decoration: none;
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom:60px;
+}
+
+#contenedor1 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 500px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+div img {
+    width: fit-content;
+    height: ft;
+}
+
+div > a {
+    text-decoration: none;
+}
+#nuevo {
+  text-align: right;
+}
+#contenedor2 {
+    display: inline-block;
+    text-align: center;
+     border: 2px solid black;
+     margin-bottom: 170px;
+     margin-left: 20px;
+     margin-right: 20px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+     
+}
+#contenedor3 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   
+}
+
+#flecha{
+    position: absolute;
+    bottom: 0%;
+    right: 10px;
+    border: 2px solid black;
+}

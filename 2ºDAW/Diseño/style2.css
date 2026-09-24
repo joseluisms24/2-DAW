@@ -1,0 +1,25 @@
+
+menu, footer {text-align: center;}
+
+
+#grandeiz {
+   width: 50%;
+   display: inline-block;
+   border: 8px blueviolet;
+}
+
+aside{
+    width: 40%;
+    display: inline-block;
+    border: 8px blue;
+}
+
+h1{
+text-align: left;
+}
+
+menu > p {
+    position: absolute;
+    left: 30%;
+    bottom: 40%;
+}

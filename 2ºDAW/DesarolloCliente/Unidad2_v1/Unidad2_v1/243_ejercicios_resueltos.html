@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4.3 Ejercicios resueltos | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-24"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li class="current-page-parent"><a href="24_tipos_de_datos.html" class="current-page-parent daddy">2.4 Tipos de datos</a>
+   <ul>
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li id="active"><a href="243_ejercicios_resueltos.html" class="active no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li><a href="26_condiciones_y_bucles.html" class="daddy">2.6 Condiciones y bucles</a>
+   <ul class="other-section">
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="242_profundizacin_conversiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_operadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4.3 Ejercicios resueltos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_109_2" class="block iDevice_content">
+<div class="exe-text"><h3 class="western">1. <strong>Coerción implícita</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Cuál es el resultado de la siguiente operación? Explica por qué sucede.</p>
+<pre class="western"><code class="western">let resultado = "10" * 2;</code> <code class="western">console.log(resultado);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p>El resultado será <code class="western">20</code>. Aunque <code class="western">"10"</code> es una cadena de texto, al realizar la multiplicación, JavaScript convierte implícitamente <code class="western">"10"</code> en el número <code class="western">10</code> para poder realizar la operación.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">2. <strong>Conversión entre números y strings</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Qué imprimen las siguientes líneas de código y por qué?</p>
+<pre class="western"><code class="western">let a = 5 + "2";</code> <code class="western">let b = 5 - "2";</code> <code class="western">console.log(a);</code> <code class="western">console.log(b);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p><code class="western">a</code> será <code class="western">"52"</code> debido a la concatenación de la cadena <code class="western">"2"</code> con el número <code class="western">5</code>.</p>
+</li>
+<li>
+<p><code class="western">b</code> será <code class="western">3</code> porque JavaScript convierte <code class="western">"2"</code> a un número para realizar la resta.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">3. <strong>Comparaciones sueltas (</strong><code class="western">==</code><strong>) versus comparaciones estrictas (</strong><code class="western">===</code><strong>)</strong></h3>
+<p><strong>Ejercicio</strong>: Evalúa las siguientes comparaciones. ¿Qué resultado esperas en cada caso?</p>
+<pre class="western"><code class="western">console.log(0 == "0");   // Comparación suelta</code> <code class="western">console.log(0 === "0");  // Comparación estricta</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p>El primer <code class="western">console.log</code> dará <code class="western">true</code> porque <code class="western">0</code> y <code class="western">"0"</code> son convertidos al mismo tipo (número) antes de ser comparados.</p>
+</li>
+<li>
+<p>El segundo <code class="western">console.log</code> dará <code class="western">false</code> porque los tipos son diferentes (número vs cadena) y la comparación estricta no realiza conversión de tipos.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">4. <strong>Conversión de tipos en valores booleanos</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Qué imprimen las siguientes líneas de código y por qué?</p>
+<pre class="western">js
+Copiar código
+<code class="western">console.log(Boolean("false"));   // Cadena no vacía</code> <code class="western">console.log(Boolean(0));         // Número cero</code> <code class="western">console.log(Boolean(""));        // Cadena vacía</code> <code class="western">console.log(Boolean([]));        // Array vacío</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p><code class="western">"false"</code> se convierte a <code class="western">true</code> porque cualquier cadena no vacía es considerada <strong>truthy</strong>.</p>
+</li>
+<li>
+<p><code class="western">0</code> se convierte a <code class="western">false</code> porque es un valor <strong>falsy</strong>.</p>
+</li>
+<li>
+<p><code class="western">""</code> se convierte a <code class="western">false</code> porque es una cadena vacía, lo que también es <strong>falsy</strong>.</p>
+</li>
+<li>
+<p><code class="western">[]</code> (un array vacío) se convierte a <code class="western">true</code> porque un objeto (incluso vacío) es considerado <strong>truthy</strong>.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">5. <strong>Conversión de objetos a tipos primitivos</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Qué imprimen las siguientes operaciones y por qué?</p>
+<pre class="western">js
+Copiar código
+<code class="western">let arr = [1, 2];</code> <code class="western">let obj = { key: "value" };</code> <code class="western">console.log(arr + 3);</code> <code class="western">console.log(obj + 3);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p><code class="western">arr + 3</code> resultará en <code class="western">"1,23"</code> porque el array <code class="western">[1, 2]</code> se convierte en la cadena <code class="western">"1,2"</code>, y luego se concatena con <code class="western">"3"</code>.</p>
+</li>
+<li>
+<p><code class="western">obj + 3</code> resultará en <code class="western">"[object
+	Object]3"</code> porque el objeto <code class="western">obj</code> se convierte en la cadena <code class="western">"[object
+	Object]"</code>, que luego se concatena con <code class="western">"3"</code>.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">6. <strong>NaN</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Qué sucede en la siguiente operación? ¿Cuál es el valor de <code class="western">resultado</code>?</p>
+<pre class="western">js
+Copiar código
+<code class="western">let resultado = "hello" / 2;</code> <code class="western">console.log(resultado);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p>El resultado será <code class="western">NaN</code> porque la cadena <code class="western">"hello"</code> no puede convertirse en un número válido, y dividir un número por una cadena no numérica resulta en <code class="western">NaN</code>.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">7. <strong>Peculiaridades del operador </strong><code class="western">+</code><strong> con cadenas y números</strong></h3>
+<p><strong>Ejercicio</strong>: ¿Cuál es el valor de <code class="western">resultado1</code> y <code class="western">resultado2</code>? Explica por qué.</p>
+<pre class="western">js
+Copiar código
+<code class="western">let resultado1 = "5" + 1;</code> <code class="western">let resultado2 = 5 + 1 + "3";</code> <code class="western">console.log(resultado1);</code> <code class="western">console.log(resultado2);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p><code class="western">resultado1</code> será <code class="western">"51"</code> porque el operador <code class="western">+</code> realiza una concatenación de la cadena <code class="western">"5"</code> con el número <code class="western">1</code>.</p>
+</li>
+<li>
+<p><code class="western">resultado2</code> será <code class="western">"63"</code> porque primero se suma <code class="western">5 + 1</code>, lo que da <code class="western">6</code>, y luego este valor se concatena con <code class="western">"3"</code>, resultando en la cadena <code class="western">"63"</code>.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">8. <strong>Conversión de </strong><code class="western">null</code><strong> y </strong><code class="western">undefined</code></h3>
+<p><strong>Ejercicio</strong>: ¿Qué imprimen las siguientes líneas y por qué?</p>
+<pre class="western">js
+Copiar código
+<code class="western">console.log(null + 5);</code> <code class="western">console.log(undefined + 5);</code></pre>
+<p><strong>Respuesta esperada</strong>:</p>
+<ul>
+<li>
+<p><code class="western">null + 5</code> imprimirá <code class="western">5</code>, porque <code class="western">null</code> se convierte a <code class="western">0</code> antes de realizar la suma.</p>
+</li>
+<li>
+<p><code class="western">undefined + 5</code> imprimirá <code class="western">NaN</code>, ya que <code class="western">undefined</code> no puede convertirse en un número válido, y cualquier operación aritmética con <code class="western">undefined</code> da como resultado <code class="western">NaN</code>.</p>
+</li>
+</ul>
+<hr />
+<h3 class="western">9. <strong>Conversión explícita</strong></h3>
+<p><strong>Ejercicio</strong>: Completa el código siguiente para convertir el valor de <code class="western">str</code> en un número de manera explícita y realizar una suma correcta.</p>
+<pre class="western">js
+Copiar código
+<code class="western">let str = "42";</code> <code class="western">let num = 8;</code> <code class="western">let resultado = /* tu código aquí */;</code> <code class="western">console.log(resultado); // Debería imprimir 50</code></pre>
+<p><strong>Solución</strong>:</p>
+<pre class="western">js
+Copiar código
+<code class="western">let str = "42";</code> <code class="western">let num = 8;</code> <code class="western">let resultado = Number(str) + num; // Conversión explícita a número</code> <code class="western">console.log(resultado); // 50</code></pre>
+<p><strong>Explicación</strong>: Se usa la función <code class="western">Number()</code> para convertir la cadena <code class="western">"42"</code> a un número antes de sumar <code class="western">8</code>.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="242_profundizacin_conversiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_operadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

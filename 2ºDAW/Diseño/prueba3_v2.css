@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+menu {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+
+}
+
+menu a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 50px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom:60px;
+}
+
+#contenedor1 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 250px;
+    margin-right: 90px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+
+div > img {
+    width: 160px;
+    height: 160px;
+}
+
+div > a {
+    text-decoration: none;
+}
+#nuevo {
+  text-align: right;
+}
+#contenedor2 {
+    display: inline-block;
+    text-align: center;
+     border: 2px solid black;
+     margin-bottom: 85px;
+     margin-left: 90px;
+     margin-right: 90px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+     
+}
+#contenedor3 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 90px;
+    margin-right: 80px;
+}
+
+footer {
+    text-align: left;
+    border: 2px solid black;
+    padding-left: 10px;
+   
+}
+
+#flecha{
+    position: absolute;
+    bottom: 5%;
+    right: 55px;
+    border: 2px solid black;
+}

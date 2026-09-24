@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.6.2 Bucles | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li><a href="24_tipos_de_datos.html" class="daddy">2.4 Tipos de datos</a>
+   <ul class="other-section">
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="26_condiciones_y_bucles.html" class="current-page-parent daddy">2.6 Condiciones y bucles</a>
+   <ul>
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li id="active"><a href="262_bucles.html" class="active no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="261_estructuras_de_control.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="27_tarea_final.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.6.2 Bucles</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id19">
+<div class="iDevice emphasis0" >
+<div id="ta19_113_2" class="block iDevice_content">
+<div class="exe-text"><p>Los bucles son estructuras repetitivas, que se ejecutarán un número de veces fijado expresamente, o que dependerá de si se cumple una determinada condición.</p>
+<p><strong>Bucle <code>for</code>.</strong></p>
+<p>Este tipo de bucle te deja repetir un bloque de instrucciones un número limitado de veces.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>for (expresión inicial; condición; incremento)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // Instrucciones a ejecutar dentro del bucle.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p>Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>for  (var  i=1;  i&lt;=20;  i++)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones que se ejecutarán 20 veces.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p><strong>Bucle<code> while()</code>.</strong></p>
+<p>Este tipo de bucles se utilizan cuando queremos repetir la ejecución de unas sentencias un número indefinido de veces, siempre que se cumpla una condición. Es más sencillo de comprender que el bucle <code>FOR</code>, ya que no incorpora en la misma línea la inicialización de las variables, su condición para seguir ejecutándose y su actualización. Sólo se indica, como veremos a continuación, la condición que se tiene que cumplir para que se realice una iteración o repetición.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>while (condición)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // Instrucciones a ejecutar dentro del bucle.</code></span></pre>
+<pre><code><span style="font-size: 10pt;">}</span> </code></pre>
+</div>
+</div>
+<p>Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>var i=0;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>while (i &lt;=10)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // Instrucciones a ejecutar dentro del bucle hasta que i sea mayor que 10 y no se cumpla la condición.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     i++;</code></span></pre>
+<pre><code><span style="font-size: 10pt;">}</span> </code></pre>
+</div>
+</div>
+<p><strong>Bucle <code>do … while()</code>.</strong></p>
+<p>El tipo de bucle <code>do...while</code> es la última de las estructuras para implementar repeticiones de las que dispone <span lang="en">JavaScript</span>, y es una variación del bucle <code>while()</code> visto anteriormente. Se utiliza generalmente, cuando no sabemos el número de veces que se habrá de ejecutar el bucle. Es prácticamente igual que el bucle <code>while()</code>, con la diferencia, de que sabemos seguro que el bucle por lo menos se ejecutará una vez.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>do {</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // Instrucciones a ejecutar dentro del bucle.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}while (condición);</code></span></pre>
+</div>
+</div>
+<p> </p>
+<p>Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>var a = 1;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>do{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     alert("El valor de a es: "+a);     // Mostrará esta alerta 2 veces.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     a++;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}while (a&lt;3);</code></span></pre>
+</div>
+</div>
+<p> </p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id30">
+<div class="iDevice emphasis0" >
+<div id="ta30_108_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Código con errores</strong></p>
+<p><strong>Este código intenta mostrar elementos de un array usando diferentes bucles (<code data-start="683" data-end="688">for</code>, <code data-start="690" data-end="697">while</code> y <code data-start="700" data-end="712">do...while</code>). Sin embargo, tiene al menos 6 errores que impiden su correcto funcionamiento. Encuentra y corrige los errores para que el código funcione como se espera.</strong></p>
+<p><img src="img0.2.png" width="547" height="387" alt="codigo_errores_bucles" /></p>
+<p>INTENTA VER LOS ERRORES</p>
+<p>Antes de ver la solución</p>
+<p>Aquí</p>
+<p>más</p>
+<p>abajo</p>
+<h3 data-start="879" data-end="934">🔍 <strong data-start="886" data-end="934">Errores incluidos (para el profesor o guía):</strong></h3>
+<ol data-start="936" data-end="1531">
+<li data-start="936" data-end="1058">
+<p data-start="939" data-end="1058">El bucle <code data-start="948" data-end="953">for</code> usa <code data-start="958" data-end="979">i &lt;= numeros.length</code> en vez de <code data-start="990" data-end="1010">i &lt; numeros.length</code>, lo que causa un <code data-start="1028" data-end="1039">undefined</code> en el último paso.</p>
+</li>
+<li data-start="1059" data-end="1155">
+<p data-start="1062" data-end="1155">La variable <code data-start="1074" data-end="1077">i</code> no está definida fuera del <code data-start="1105" data-end="1110">for</code>, por lo tanto no puede usarse en el <code data-start="1147" data-end="1154">while</code>.</p>
+</li>
+<li data-start="1156" data-end="1247">
+<p data-start="1159" data-end="1247">En <code data-start="1162" data-end="1169">while</code>, faltan los paréntesis: <code data-start="1194" data-end="1209">while (i &lt; 5)</code> y también el punto y coma tras <code data-start="1241" data-end="1246">i++</code>.</p>
+</li>
+<li data-start="1248" data-end="1339">
+<p data-start="1251" data-end="1339">En el <code data-start="1257" data-end="1269">do...while</code>, hay un error de concatenación: falta un <code data-start="1311" data-end="1314">+</code> entre string y variable.</p>
+</li>
+<li data-start="1340" data-end="1414">
+<p data-start="1343" data-end="1414">El <code data-start="1346" data-end="1349">i</code> puede volverse negativo y causar acceso fuera de rango al array.</p>
+</li>
+<li data-start="1415" data-end="1454">
+<p data-start="1418" data-end="1454">Falta punto y coma en varias líneas.</p>
+</li>
+<li data-start="1455" data-end="1531">
+<p data-start="1458" data-end="1531">Posible falta de inicialización o reinicio de <code data-start="1504" data-end="1507">i</code> antes del <code data-start="1518" data-end="1530">do...while</code>.</p>
+</li>
+</ol></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="261_estructuras_de_control.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="27_tarea_final.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

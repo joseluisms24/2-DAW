@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2 Compatibilidades | Unidad 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 1: SELECCIÓN DE ARQUITECTURAS Y HERRAMIENTAS DE PROGRAMACIÓN</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_navegadores_y_arquitectura_de_ejecucin.html" class="daddy">2. Navegadores y arquitectura de ejecución</a>
+   <ul class="other-section">
+      <li><a href="21_navegadores.html" class="no-ch">2.1 Navegadores</a></li>
+      <li><a href="22_arquitectura_de_ejecucin.html" class="no-ch">2.2 Arquitectura de ejecución</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_lenguajes_de_programacin_en_clientes_web.html" class="current-page-parent daddy">3. Lenguajes de programación en clientes web</a>
+   <ul>
+      <li><a href="31_caractersticas_de_javascript.html" class="no-ch">3.1 Características de JavaScript</a></li>
+      <li id="active"><a href="32_compatibilidades.html" class="active no-ch">3.2 Compatibilidades</a></li>
+      <li><a href="33_seguridad.html" class="no-ch">3.3 Seguridad</a></li>
+      <li><a href="34_ofuscar_cdigo_javascript.html" class="no-ch">3.4 Ofuscar código JavaScript</a></li>
+   </ul>
+   </li>
+   <li><a href="4_herramientas_de_programacin_en_javascript.html" class="no-ch">4. Herramientas de programación en Javascript</a></li>
+   <li><a href="5_integracin_de_javascript_en_html.html" class="no-ch">5. Integración de JavaScript en HTML</a></li>
+   <li><a href="6_comunicacin_con_el_exterior.html" class="no-ch">6. Comunicación con el exterior</a></li>
+   <li><a href="7_posibilidades_que_ofrece_javascript.html" class="no-ch">7. Posibilidades que ofrece JavaScript</a></li>
+   <li><a href="8_tarea_final.html" class="daddy">8. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="81_criterios_de_correccin_y_entrega.html" class="no-ch">8.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_caractersticas_de_javascript.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_seguridad.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2 Compatibilidades</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id9">
+<div class="iDevice emphasis0" >
+<div id="ta9_117_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">A diferencia de otros tipos de <span lang="en">scripts</span> como los CGI, <span lang="en">JavaScript</span> es interpretado por el cliente. Actualmente existen múltiples clientes o navegadores que soportan <span lang="en">JavaScript</span>, incluyendo <span lang="en">Firefox</span>, <span lang="en">Google Chrome</span>, Safari, Opera, <span lang="en">Internet Explorer</span>, etc. Por lo tanto, cuando escribimos un <span lang="en">script</span> en nuestra página <span lang="en">web</span>, tenemos que estar seguros de que será interpretado por diferentes navegadores y que aporte la misma funcionalidad y características en cada uno de ellos. Ésta es otra de las diferencias con los <span lang="en">scripts</span> de servidor en los que nosotros dispondremos del control total sobre su interpretación.</p>
+<p style="text-align: justify;">Cada tipo de navegador da soporte a diferentes características del <span lang="en">JavaScript</span> y además también añaden sus propios <strong><span lang="en">bugs</span></strong><strong> o fallos</strong>. Algunos de estos fallos son específicos de la plataforma sobre la que se ejecuta ese navegador, mientras que otros son específicos del propio navegador en sí.</p>
+<p>A veces las incompatibilidades entre navegadores al interpretar el código de <span lang="en">JavaScript</span> no vienen dadas por el propio código en si, sino que su origen proviene del <a class="glosario">código fuente</a> HTML. Por lo tanto es muy importante que tu código HTML siga las <strong>especificaciones del estándar W3C</strong> y para ello dispones de herramientas como el validador HTML W3C:</p>
+<p></p>
+<p style="text-align: center;"><a href="http://validator.w3.org/">Validador W3C</a></p>
+<p>También tienes que tener precaución con las <strong>limitaciones en el uso de <span lang="en">JavaScript</span></strong>:</p>
+<ul class="lista_verificacion">
+<li>No todos los navegadores soportan lenguajes de script (en especial <span lang="en">JavaScript</span>) en el lado del cliente.</li>
+<li>Algunos dispositivos móviles tampoco podrán ejecutar <span lang="en">JavaScript</span>.</li>
+<li>Incluso las <a class="glosario">implementaciones</a> más importantes de <span lang="en">JavaScript</span> en los diferentes navegadores no son totalmente compatibles entre ellas: por ejemplo diferentes incompatibilidades entre <span lang="en">Firefox</span> e <span lang="en">Internet Explorer</span>.</li>
+<li>La ejecución de código <span lang="en">JavaScript</span> en el cliente podría ser desactivada por el usuario de forma manual, con lo que no podremos tener una confianza ciega en que se vaya a ejecutar siempre tu código de <span lang="en">JavaScript</span>.</li>
+<li>Algunos navegadores de voz, no interpretan el código de <span lang="en">JavaScript</span>.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Por qué es tan importante aprender JavaScript?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_109_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Javascript es un lenguaje poderoso, capaz de aportar soluciones eficaces en la mayoría de los ámbitos de la tecnología.</p>
+<p style="text-align: justify;">Es especialmente importante porque es el único lenguaje de programación que entienden los navegadores, con el que se desarrolla la parte de la funcionalidad frontend en sitios web y aplicaciones web modernas. Pero también es fundamental en muchos otros tipos de desarrollos. Sus usos más importantes son los siguientes:</p>
+<ul style="text-align: justify;">
+<li>Desarrollo de sitios web del lado del cliente (frontend, en el navegador)</li>
+<li>Desarrollo de todo tipo de aplicaciones gracias a la plataforma NodeJS</li>
+<li>Desarrollo de aplicaciones para dispositivos móviles, híbridas o que compilan a nativo</li>
+<li>Desarrollo de aplicaciones de escritorio para sistemas Windows, Linux y Mac, pudiendo escribir un código compatible con todas las plataformas.</li>
+</ul>
+<p style="text-align: justify;">Por tanto, podemos considerar a Javascript el lenguaje universal, pues es el que más tipos de aplicaciones y usos que puede abarcar en la actualidad. Es por ello que resulta un lenguaje muy recomendable para aprender, ya que nos ofrece capacidades para usarlo en todo tipo de proyectos, siendo que algunos de ellos son parcela exclusiva de Javascript.</p>
+<p style="text-align: justify;">Javascript es un lenguaje levemente tipado, que se presta bien para aprender a programar, ya que dar los primeros pasos es relativamente sencillo. Sin embargo, cuando el estudiante profundiza, sus características lo hacen diferente de otros lenguajes y requiere un estudio en profundidad para poder avanzar con garantías en cualquier aplicación avanzada.</p>
+<p style="text-align: justify;">Populares Librerías como jQuery o React, o frameworks como Angular, Vue o Ionic están basados en Javascript, sin olvidarnos de estándares ampliamente usados como Web Components y librerías basadas en ellos como Stencil o LitElement. Para abordar cualquiera de estas herramientas, y muchas otras, el aprendizaje sólido Javascript es un importante requisito.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_caractersticas_de_javascript.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_seguridad.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

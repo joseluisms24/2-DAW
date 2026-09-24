@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.5.7 Operadores de objeto | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li><a href="24_tipos_de_datos.html" class="daddy">2.4 Tipos de datos</a>
+   <ul class="other-section">
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="25_operadores.html" class="current-page-parent daddy">2.5 Operadores</a>
+   <ul>
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li id="active"><a href="257_operadores_de_objeto.html" class="active no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li><a href="26_condiciones_y_bucles.html" class="daddy">2.6 Condiciones y bucles</a>
+   <ul class="other-section">
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="256_operadores_de_desplazamiento_binario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="258_operadores_miscelneos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.5.7 Operadores de objeto</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_110_2" class="block iDevice_content">
+<div class="exe-text"><p>El siguiente grupo de operadores se relaciona directamente con objetos y tipos de datos. La mayor parte de ellos fueron implementados a partir de las primeras versiones de <span lang="en">JavaScript</span>, por lo que puede haber algún tipo de incompatibilidad con navegadores antiguos.</p>
+<p><strong>. (punto)</strong></p>
+<p>El operador punto, indica que el objeto a su izquierda tiene o contiene el recurso a su derecha, como por ejemplo: <code>objeto.propiedad</code> y <code>objeto.método()</code>.</p>
+<p>Ejemplo con un objeto nativo de <span lang="en">JavaScript</span>:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">var  s  =  new  String('rafa');</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>var  longitud  =  s.length;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>var  pos  =  s.indexOf("fa");       //  resultado:  pos  =  2</code></span></pre>
+</div>
+</div>
+<p><strong>[] (corchetes para enumerar miembros de un objeto).</strong></p>
+<p>Por ejemplo cuando creamos un array: <code>var a =["Santiago","Coruña", "Lugo"];</code></p>
+<p>Enumerar un elemento de un array: <code>a[1] = "Coruña";</code></p>
+<p>Enumerar una propiedad de un objeto: <code>a["color"]= "azul";</code></p>
+<p><strong><code>Delete</code> (para eliminar un elemento de una colección).</strong></p>
+<p>Por ejemplo si consideramos: <code>var oceanos = new Array("Atlantico", "Pacifico", "Indico","Artico");</code></p>
+<p>Podríamos hacer:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>delete oceanos[2];      </code></span></pre>
+<pre><span style="font-size: 10pt;"><code>// Ésto eliminaría el tercer elemento del array ("Indico"), pero la longitud del array no cambiaría. <br />// Si intentamos referenciar esa posición oceanos[2] obtendríamos undefined.</code></span></pre>
+</div>
+</div>
+<p><strong><code>In</code> (para inspeccionar métodos o propiedades de un objeto).</strong></p>
+<p>El operando a la izquierda del operador, es una cadena referente a la propiedad o método (simplemente el nombre del método sin paréntesis); el operando a la derecha del operador, es el objeto que estamos inspeccionando. Si el objeto conoce la propiedad o método, la expresión devolverá <span lang="en">true</span>.</p>
+<p>Ejemplo: <code>"write" in document</code></p>
+<p>o también <code>"defaultView" in document</code></p>
+<p><strong><code>instanceof</code> (para comprobar si un objeto es una instancia de un objeto nativo de <span lang="en">JavaScript</span>).</strong></p>
+<p>Ejemplo:<code> a = new Array(1,2,3);</code></p>
+<p><code>a instanceof Array; // devolverá true.</code></p>
+<p><strong><code>new</code> (para acceder a los constructores de objetos incorporados en el núcleo de <span lang="en">JavaScript</span>).</strong></p>
+<p>Ejemplo:<code> var hoy = new Date();</code></p>
+<p><code>// creará el objeto hoy de tipo Date() empleando el constructor por defecto de dicho objeto</code>.</p>
+<p><strong><code>this</code> (para hacer referencia al propio objeto en el que estamos localizados).</strong></p>
+<p>Ejemplo: <code>  <br /></code></p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>&lt;button id="nombre" onclick="document.write(this.value);" value="Adios"&gt;&lt;br&gt; Hola y ...&lt;/button&gt;&lt;br&gt;&lt;br&gt;<br />// Tenemos un botón que al pulsarlo escribe adiós. Escribe this.value, que en el objeto actual que es botón<br />// con id nombre. Es decir el value del objeto actual. <br /></code></span></pre>
+</div>
+</div>
+<p><span style="font-size: 10pt;"> </span></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="256_operadores_de_desplazamiento_binario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="258_operadores_miscelneos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

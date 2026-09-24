@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4.2 Profundización conversiones | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li class="current-page-parent"><a href="24_tipos_de_datos.html" class="current-page-parent daddy">2.4 Tipos de datos</a>
+   <ul>
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li id="active"><a href="242_profundizacin_conversiones.html" class="active no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li><a href="26_condiciones_y_bucles.html" class="daddy">2.6 Condiciones y bucles</a>
+   <ul class="other-section">
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="241_introduccin_conversiones_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="243_ejercicios_resueltos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4.2 Profundización conversiones</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id27">
+<div class="iDevice emphasis0" >
+<div id="ta27_108_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: x-large;"><span style="font-size: medium;"><span>JavaScript es conocido por su flexibilidad y dinamismo, pero esta flexibilidad a menudo lleva a comportamientos peculiares cuando se trata de </span></span><strong><span style="font-size: medium;"><span>conversiones automáticas</span></span></strong><span style="font-size: medium;"><span> entre tipos de datos (coerción). Algunas de estas peculiaridades pueden causar errores inesperados si no se entienden bien. A continuación, detallo algunos aspectos clave relacionados con la conversión de tipos en JavaScript:</span></span></span></p>
+<h3 class="western">1. <strong>Coerción implícita</strong>:</h3>
+<ul>
+<li>
+<p>JavaScript realiza conversiones automáticas entre tipos de datos cuando se combinan o comparan tipos diferentes. Esta coerción puede ser confusa ya que los resultados no siempre son intuitivos.</p>
+</li>
+</ul>
+<h3 class="western">2. <strong>Conversión entre números y strings</strong>:</h3>
+<ul>
+<li>
+<p><strong>Suma de número y string</strong>: Cuando sumamos un número con una cadena de texto, JavaScript convierte ambos operandos a una cadena y realiza la concatenación.</p>
+<pre class="western"><code class="western">console.log(5 + "3"); // "53"</code></pre>
+</li>
+<li>
+<p><strong>Resta entre número y string</strong>: Curiosamente, cuando restamos, JavaScript trata de convertir el string a número.</p>
+<pre class="western"><code class="western">console.log(5 - "3"); // 2</code></pre>
+</li>
+</ul>
+<h3 class="western">3. <strong>Comparaciones sueltas (</strong><code class="western">==</code><strong>) versus comparaciones estrictas (</strong><code class="western">===</code><strong>)</strong>:</h3>
+<ul>
+<li>
+<p>JavaScript permite dos tipos de comparaciones: sueltas (<code class="western">==</code>) y estrictas (<code class="western">===</code>). Las comparaciones sueltas realizan coerción implícita antes de comparar los valores.</p>
+<pre class="western"><code class="western">console.log(5 == "5");  // true  (coerción implícita de la cadena "5" al número 5)</code> <code class="western">console.log(5 === "5"); // false (sin coerción, comparando un número con un string)</code></pre>
+</li>
+<li>
+<p>Las comparaciones estrictas no convierten tipos, por lo que son más seguras y predecibles. Generalmente, es recomendable usar <code class="western">===</code> para evitar errores inesperados.</p>
+</li>
+</ul>
+<h3 class="western">4. <strong>Conversión de tipos en valores booleanos</strong>:</h3>
+<ul>
+<li>
+<p>JavaScript tiene reglas específicas para convertir tipos a booleanos, conocidas como <strong>"truthy" y "falsy"</strong>.</p>
+</li>
+<li>
+<p><strong>Valores "falsy"</strong>: <code class="western">false</code>, <code class="western">0</code>, <code class="western">""</code> (cadena vacía), <code class="western">null</code>, <code class="western">undefined</code>, y <code class="western">NaN</code> son tratados como <code class="western">false</code> cuando se convierten a booleanos.</p>
+<pre class="western"><code class="western">console.log(Boolean(0));        // false</code> <code class="western">console.log(Boolean(""));       // false</code> <code class="western">console.log(Boolean(undefined));// false</code></pre>
+</li>
+<li>
+<p>Cualquier otro valor es considerado <strong>"truthy"</strong>, es decir, se convierte a <code class="western">true</code>:</p>
+<pre class="western"><code class="western">console.log(Boolean(42));       // true</code> <code class="western">console.log(Boolean("hello"));  // true</code></pre>
+</li>
+</ul>
+<h3 class="western">5. <strong>Conversión de objetos a tipos primitivos</strong>:</h3>
+<ul>
+<li>
+<p>Cuando un objeto necesita ser convertido a un tipo primitivo (por ejemplo, durante una concatenación o comparación), JavaScript intenta primero convertirlo a un string o número.</p>
+</li>
+<li>
+<p>Los objetos se convierten a strings llamando su método <code class="western">toString()</code> y a números usando <code class="western">valueOf()</code>, si están definidos.</p>
+<pre class="western"><code class="western">console.log([1, 2] + 3); // "1,23" (el array [1, 2] se convierte a la cadena "1,2")</code> <code class="western">console.log({} + 2);     // "[object Object]2"</code></pre>
+</li>
+</ul>
+<h3 class="western">6. <strong>NaN</strong>:</h3>
+<ul>
+<li>
+<p>El valor especial <code class="western">NaN</code> (Not-a-Number) resulta cuando una operación matemática no tiene sentido. Por ejemplo, dividir un número por una cadena no numérica o intentar convertir una cadena no numérica a número genera <code class="western">NaN</code>.</p>
+<pre class="western"><code class="western">console.log(5 / "hello");  // NaN</code> <code class="western">console.log(Number("abc")); // NaN</code></pre>
+</li>
+<li>
+<p><strong>Peculiaridad</strong>: <code class="western">NaN</code> <strong>no es igual a sí mismo</strong>, lo que significa que <code class="western">NaN
+	=== NaN</code> es <code class="western">false</code>.</p>
+<pre class="western"><code class="western">console.log(NaN === NaN); // false</code></pre>
+</li>
+</ul>
+<h3 class="western">7. <strong>Peculiaridades del operador </strong><code class="western">+</code><strong> con cadenas y números</strong>:</h3>
+<ul>
+<li>
+<p>El operador <code class="western">+</code> se usa tanto para concatenar cadenas como para sumar números, lo que genera conversiones no siempre obvias. En contextos donde se combina un número con una cadena, JavaScript opta por la concatenación:</p>
+<pre class="western"><code class="western">console.log("5" + 1); // "51" (el número 1 se convierte en string y se concatena)</code></pre>
+</li>
+</ul>
+<h3 class="western">8. <strong>Conversión de </strong><code class="western">null</code><strong> y </strong><code class="western">undefined</code>:</h3>
+<ul>
+<li>
+<p><code class="western">null</code> se convierte a <code class="western">0</code> en operaciones aritméticas, pero se convierte a <code class="western">false</code> en contextos booleanos:</p>
+<pre class="western"><code class="western">console.log(null + 5); // 5</code> <code class="western">console.log(Boolean(null)); // false</code></pre>
+</li>
+<li>
+<p><code class="western">undefined</code> es más problemático, ya que suele resultar en <code class="western">NaN</code> cuando se usa en operaciones aritméticas:</p>
+<pre class="western"><code class="western">console.log(undefined + 5); // NaN</code> <code class="western">console.log(Boolean(undefined)); // false</code></pre>
+</li>
+</ul>
+<h3 class="western">9. <strong>Conversión explícita</strong>:</h3>
+<ul>
+<li>
+<p>Para evitar la coerción implícita, es buena práctica usar conversiones explícitas con funciones como <code class="western">Number()</code>, <code class="western">String()</code>, <code class="western">Boolean()</code>, o usando operadores específicos como <code class="western">parseInt()</code>, <code class="western">parseFloat()</code> para convertir cadenas a números.</p>
+<pre class="western"><code class="western">let str = "123";</code> <code class="western">let num = Number(str);  // Conversión explícita</code></pre>
+</li>
+</ul>
+<h3 class="western">Conclusión:</h3>
+<p>JavaScript tiene muchas peculiaridades en cuanto a la coerción de tipos, lo que puede llevar a resultados inesperados si no se comprenden bien. Por ello, es recomendable usar <strong>comparaciones estrictas</strong> (<code class="western">===</code>), realizar conversiones explícitas de tipos cuando sea posible, y estar consciente de los valores que se consideran "falsy" y "truthy".</p>
+<p><span style="font-size: x-large;"></span></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="241_introduccin_conversiones_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="243_ejercicios_resueltos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

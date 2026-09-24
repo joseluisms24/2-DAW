@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1 Características de JavaScript | Unidad 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 1: SELECCIÓN DE ARQUITECTURAS Y HERRAMIENTAS DE PROGRAMACIÓN</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_navegadores_y_arquitectura_de_ejecucin.html" class="daddy">2. Navegadores y arquitectura de ejecución</a>
+   <ul class="other-section">
+      <li><a href="21_navegadores.html" class="no-ch">2.1 Navegadores</a></li>
+      <li><a href="22_arquitectura_de_ejecucin.html" class="no-ch">2.2 Arquitectura de ejecución</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_lenguajes_de_programacin_en_clientes_web.html" class="current-page-parent daddy">3. Lenguajes de programación en clientes web</a>
+   <ul>
+      <li id="active"><a href="31_caractersticas_de_javascript.html" class="active no-ch">3.1 Características de JavaScript</a></li>
+      <li><a href="32_compatibilidades.html" class="no-ch">3.2 Compatibilidades</a></li>
+      <li><a href="33_seguridad.html" class="no-ch">3.3 Seguridad</a></li>
+      <li><a href="34_ofuscar_cdigo_javascript.html" class="no-ch">3.4 Ofuscar código JavaScript</a></li>
+   </ul>
+   </li>
+   <li><a href="4_herramientas_de_programacin_en_javascript.html" class="no-ch">4. Herramientas de programación en Javascript</a></li>
+   <li><a href="5_integracin_de_javascript_en_html.html" class="no-ch">5. Integración de JavaScript en HTML</a></li>
+   <li><a href="6_comunicacin_con_el_exterior.html" class="no-ch">6. Comunicación con el exterior</a></li>
+   <li><a href="7_posibilidades_que_ofrece_javascript.html" class="no-ch">7. Posibilidades que ofrece JavaScript</a></li>
+   <li><a href="8_tarea_final.html" class="daddy">8. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="81_criterios_de_correccin_y_entrega.html" class="no-ch">8.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_lenguajes_de_programacin_en_clientes_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_compatibilidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1 Características de JavaScript</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id8">
+<div class="iDevice emphasis0" >
+<div id="ta8_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Como vimos anteriormente, los lenguajes de programación para clientes <span lang="en">web</span> no son un reemplazo de la programación en el lado del servidor. Cualquier <span lang="en">web</span> que reaccione dinámicamente a interacciones del usuario o que almacene datos, estará gestionada por lenguajes de <span lang="en">script</span> en el lado del servidor, incluso aunque usemos <span lang="en">JavaScript</span> en el cliente para mejorar la experiencia de usuario. Las razones son simples:</p>
+<ul class="lista_verificacion">
+<li style="text-align: justify;"><strong>Primero</strong>: <span lang="en">JavaScript</span> por sí mismo no puede escribir ficheros en el servidor. Puede ayudar al usuario a elegir opciones o preparar datos para su envío, pero después de eso solamente podrá ceder los datos al lenguaje de servidor encargado de la actualización de datos.</li>
+<li style="text-align: justify;"><strong>Segundo</strong>: no todos los clientes <span lang="en">web</span> ejecutan <span lang="en">JavaScript</span>. Algunos lectores, dispositivos móviles, buscadores, o navegadores instalados en ciertos contextos están entre aquellos que no pueden realizar llamadas a <span lang="en">JavaScript</span>, o que simplemente son incompatibles con el código de <span lang="en">JavaScript</span> que reciben. Aunque ésto ocurra nuestra página <span lang="en">web</span> debería ser completamente funcional con <span lang="en">JavaScript</span> desactivado. Utilizaremos <span lang="en">JavaScript</span> para conseguir que la experiencia de navegación <span lang="en">web</span> sea lo más rápida, moderna o divertida posible, pero no dejaremos que nuestra <span lang="en">web</span> deje de funcionar si <span lang="en">JavaScript</span> no está funcionando.</li>
+<li style="text-align: justify;"><strong>Tercero</strong>: uno de los caminos que más ha integrado la programación cliente con la programación servidor ha surgido gracias a <strong><acronym title="JavaScript Asíncrono Y XML." lang="en">AJAX</acronym></strong>. El proceso "asíncrono" de <span lang="en">AJAX </span> se ejecuta en el navegador del cliente y emplea <span lang="en">JavaScript</span>. Este proceso se encarga de solicitar datos <acronym title="Lenguaje de Marcas Extensible.">XML</acronym>, o enviar datos al lenguaje de servidor y todo ello de forma transparente en <span lang="en">background</span>. Los datos devueltos por el servidor pueden ser examinados por <span lang="en">JavaScript</span> en el lado del cliente, para actualizar secciones o partes de la página <span lang="en">web</span>. Es así como funciona una de las <span lang="en">webs</span> más populares en Internet, el servicio de <span lang="en">Google Maps</span> (http://maps.gogle.com).</li>
+</ul>
+<p><span lang="en">JavaScript</span> está orientado a dar soluciones a:</p>
+<ul class="lista_verificacion">
+<li>Conseguir que nuestra página <span lang="en">web</span> responda o reaccione directamente a la interacción del usuario con elementos de formulario y enlaces hipertexto.</li>
+<li>La distribución de pequeños grupos de datos y proporcionar una interfaz amigable para esos datos.</li>
+<li>Controlar múltiples ventanas o marcos de navegación, <span lang="en">plug-ins</span>, o <span lang="en">applets</span> Java basados en las elecciones que ha hecho el usuario en el documento HTML.</li>
+<li>Pre-procesar datos en el cliente antes de enviarlos al servidor.</li>
+<li>Modificar estilos y contenido en los navegadores de forma dinámica e instantáneamente, en respuesta a interacciones del usuario.</li>
+<li>Solicitar ficheros del servidor, y enviar solicitudes de lectura y escritura a los lenguajes de servidor.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Lenguajes de programación vs Lenguajes de scripting</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_118_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Deberíamos matizar también entre lo que llamamos lenguajes de programación y lenguajes de scripting. Veamos algunos ejemplos y a continuación algunas diferencias: </p>
+<ul style="list-style-type: square;">
+<li style="text-align: justify;">Lenguajes de programación: Java, C, C++, Swift, Pascal etc.</li>
+<li style="text-align: justify;">Lenguajes de scripting: JavaScript, Shell, Perl, PHP, Pyton, Ruby, etc.</li>
+</ul>
+<p style="text-align: justify;">Algunas diferencias y aspectos:</p>
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;">Los lenguajes de  script son interpretados, mientras que muchas veces los lenguajes de programación se compilan. </li>
+<li style="text-align: justify;">Los lenguajes de script usan componentes ya preexistentes, mientras que los lenguajes de programación en ocasiones empiezan a desarrollarse desde 0. </li>
+<li style="text-align: justify;">Los programas de lenguajes de programación, se pueden ejecutar de forma independiente, mientras que un lenguaje de script se ejecuta muchas veces dentro de otro programa. </li>
+<li style="text-align: justify;">Los scritps se ejecutan línea a línea con lo cual pueden producirse muchos errores en ejecución. </li>
+<li style="text-align: justify;">Los lenguajes de script no generan un fichero ejecutable y no necesitan ser compilados. </li>
+<li style="text-align: justify;">Los lenguajes de script han sido diseñados para ser fáciles de programar y utilizar. </li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id22">
+<div class="iDevice emphasis0" >
+<div id="ta22_108_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Más características a tener en cuenta: </strong></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;">Sabemos que JavaScript no tiene nada que ver con Java. En el momento en el que surgió JavaScript, Java tenía una gran popularidad y gozaba de un gran número de seguidores, por lo que <strong>el nombre de Javascript fue puro marketing</strong> con idea de atraer a muchos seguidores de Java.</li>
+<li style="text-align: justify;">JavaScript, a diferencia de otros lenguajes, si sigue un estándar que determina cómo emplear el lenguaje de modo que permite a los fabricantes de software desarrollar las herramientas adecuadas para interpretarlo correctamente.  Es el <strong>estándar ECMAScript </strong> (que va por la versión ES6) el que marca cómo deberá ser interpretado el lenguaje.</li>
+<li style="text-align: justify;"><strong>Factores a tener en cuenta en un proyecto web</strong>: ¿ a qué usuario va dirigido? , conectividad (qué tipo de red dispone la zona dónde se va a ejecutar nuestro proyecto web, podría ser en un país como Perú con unas determinadas infraestructuras), accesibilidad(vamos a adecuar nuestro proyecto a gente con algún tipo de discapacidad), dispositivo(cómo van a ser la mayoría de los dispositivos en los que se ejecute nuestro proyecto web, si son smartphones será de gama media, alta).</li>
+<li style="text-align: justify;">Los<strong> runtime</strong> son la parte de los navegadores encargadas de gestionar todo lo relativo a JavaScript. Cada navegador tiene su runtime, e incluso el mismo runtime puede variar en su comportamiento por el sistema operativo del dispositivo donde esté instalado dicho navegador. Los runtimes tienen a su vez mecanismos de optimización (<strong>JIT</strong> - Just In Time compilation). <strong>Su finalidad es intentar hacer más rápida la ejecución de Javascript</strong> (el objetivo es generar algo que entienda la máquina y que pueda ejecutar):</li>
+</ul>
+<p><img src="proceso_runtime.JPG" alt="" width="675" height="408" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;"><span><strong>Event loop</strong>: es el mecanismo que utiliza Javascript para </span><span>“</span><span>emular</span><span>”</span><span> la asincronía. Es un bucle en el que en cada iteración (ticks) se pasa por fases. La duración de un tick no es fija (depende de las tareas en cada fase).</span></li>
+<li style="text-align: justify;"><strong>Garbage Collector: </strong>l<span class="ILfuVd"><span class="hgKElc">os lenguajes de alto nivel incluyen una herramienta de software conocida como "recolector de basura" (garbage collector), cuya función es rastrear las reservas de memoria y su utilización, para así encontrar cuándo cierta parte de la memoria ya no es necesaria, y en su momento liberarla automáticamente para devolverla al SO (sistema operativo).</span></span></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_lenguajes_de_programacin_en_clientes_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_compatibilidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

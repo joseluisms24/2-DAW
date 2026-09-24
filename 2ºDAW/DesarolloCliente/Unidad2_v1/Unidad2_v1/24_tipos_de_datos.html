@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4 Tipos de datos | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li id="active"><a href="24_tipos_de_datos.html" class="active daddy">2.4 Tipos de datos</a>
+   <ul>
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li><a href="26_condiciones_y_bucles.html" class="daddy">2.6 Condiciones y bucles</a>
+   <ul class="other-section">
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="23_palabras_reservadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="241_introduccin_conversiones_tipos_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4 Tipos de datos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id8">
+<div class="iDevice emphasis0" >
+<div id="ta8_112_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En todo programa informático manipulamos constantemente diferentes tipos de valores como por ejemplo números o textos. Los tipos de datos especifican qué tipo de valor se guardará en una determinada variable. Este concepto es importante a la hora de determinar cómo podemos combinar ciertas variables o si es posible hacerlo. </p>
+<p style="text-align: justify;"><strong>Los tres tipos de datos primitivos de JavaScript son: números , cadenas de texto y valores</strong> <strong>booleanos</strong>. Además de estos tres tipos de datos, existe el tipo de datos compuesto llamado <strong>objeto</strong>. Este último representa una colección de valores primitivos o de valores compuestos por otros objetos. Esta colección de valores nos permite definir tipos de datos como por ejemplo los <strong>arrays</strong> y las <strong>funciones</strong>, las cuales estudiaremos más adelante. </p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Números </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_108_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En JavaScript, a diferencia de la mayoría de lenguajes de programación, existe solo un tipo de datos númerico. Todos los números que utilicemos, ya sean valores enteros o valores de punto flotante, se representarán a través del formato de punto flotante de 64 bits definido por el estándar IEEE. Este formato es el llamado double en los lenguajes Java o C++. </p>
+<p style="text-align: justify;">Para crear variables numéricas también se puede utilizar notación científica. Para ello usamos un exponente (que se define con una letra "e"), seguido a continuación del exponente al cuál está elevado. También podremos crear números en bases diferentes (base 8, base 16). Para crear un número en base 8 comenzamos con un 0 seguido de números del 0 al 7. Para los números hexadecimal se pone un 0 seguido de una "x" y cualquier carácter hexadecimal (del 0 al 9 y de la A a la F).</p>
+<p><img src="numeros_decimales.JPG" alt="" width="1020" height="349" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="numeros_binarios.JPG" alt="" width="1019" height="253" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="numeros_octales.JPG" alt="" width="1017" height="401" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="numeros_hexadecimales.JPG" alt="" width="1017" height="277" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Cadenas de texto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_109_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El tipo de datos que utiliza JavaScript para representar cadenas de texto, es llamado string. Con este tipo de datos es posible representar una secuencia de letras, dígitos, signos de puntuación o cualquier otro carácter de Unicode. La cadena de caracteres la debemos definir entre comillas dobles o comillas simples. </p>
+<p style="text-align: justify;"><img src="ejemplocadenas.JPG" alt="" width="585" height="75" /></p>
+<p style="text-align: justify;">Dado que las comillas dobles o simples las utilizamos para delimitar las cadenas de texto, es posible que surja la duda de qué hacer para representar estos signos. Para ello, necesitamos utilizar secuencias de escape haciendo uso de la barra invertida(\). La combinación de esta barra con otros caracteres permite que el navegador pueda representar un carácter, que sin la ayuda de la barra invertida no podría representarse. </p>
+<p style="text-align: justify;"><img src="secuencias_escape.JPG" alt="" width="517" height="406" />  <img src="ejemplo_secuencias_escape.JPG" alt="" width="680" height="203" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Booleano</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_110_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El tipo de datos booleano, también conocido como valores lógicos, es el tipo de datos más simple debido a que admite solo dos valores: true o false (verdadero o falso). Debemos definir estos valores sin ningún tipo de comiillas. Este tipo de datos es bastante útil a la hora de evaluar expresiones lógicas o verificar condiciones particulares en nuestros programas. </p>
+<p style="text-align: justify;"><img src="ejemplo_boolean.JPG" alt="" width="219" height="74" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Null</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_111_2" class="block iDevice_content">
+<div class="exe-text"><p>En ciencias informáticas, un valor <strong>null</strong>  representa una referencia que apunta, generalmente intencionadamente, a una inexistente o un objeto o dirección inválida. <span id="result_box" lang="es"><span class="hps">El significado de</span> <span class="hps">una referencia null</span> <span class="hps">varía entre las</span> <span class="hps">implementaciones de lenguajes</span><span>.</span></span></p>
+<p>El valor <code>null</code> es un literal de Javascript que representa intencionalmente un valor nulo o "vacío". Es uno de los valores primitivos de Javascript.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="23_palabras_reservadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="241_introduccin_conversiones_tipos_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

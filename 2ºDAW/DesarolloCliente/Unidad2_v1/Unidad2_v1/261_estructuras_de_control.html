@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.6.1 Estructuras de control | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li><a href="24_tipos_de_datos.html" class="daddy">2.4 Tipos de datos</a>
+   <ul class="other-section">
+      <li><a href="241_introduccin_conversiones_tipos_de_datos.html" class="no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="26_condiciones_y_bucles.html" class="current-page-parent daddy">2.6 Condiciones y bucles</a>
+   <ul>
+      <li id="active"><a href="261_estructuras_de_control.html" class="active no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="26_condiciones_y_bucles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="262_bucles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.6.1 Estructuras de control</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_112_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En los lenguajes de programación, las instrucciones que te permiten controlar las decisiones y bucles de ejecución, se denominan "Estructuras de Control". Una estructura de control, dirige el flujo de ejecución a través de una secuencia de instrucciones, basadas en decisiones simples y en otros factores.</p>
+<p style="text-align: justify;">Una parte muy importante de una estructura de control es la "condición". Cada condición es una expresión que se evalúa a <span lang="en">true </span>o <span lang="en">false</span>.</p>
+<p style="text-align: justify;">En <span lang="en">JavaScript</span> tenemos varias estructuras de control, para las diferentes situaciones que te puedas encontrar durante la programación. Tres de las estructuras de control más comunes son: construcciones <code>if</code>, construcciones <code>if...else</code> y los <strong>bucles</strong>.</p>
+<p style="text-align: justify;"><strong>Construcción <code>if</code></strong></p>
+<p style="text-align: justify;">La decisión más simple que podemos tomar en un programa, es la de seguir una rama determinada si una determinada condición es <span lang="en">true </span>.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">if  (condición)     // entre paréntesis irá la condición que se evaluará a true o false.</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones a ejecutar si se cumple la condición </code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p> </p>
+<p>Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>if (miEdad &gt;30)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     alert("Ya eres una persona adulta");</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p> </p>
+<p><strong>Construcción <code>if … else</code></strong></p>
+<p>En este tipo de construcción, podemos gestionar que haremos cuando se cumpla y cuando no se cumpla una determinada condición.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>if  (condición)     // entre paréntesis irá la condición que se evaluará a true o false.</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones a ejecutar si se cumple la condición </code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>else</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones a ejecutar si no se cumple la condición </code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p> </p>
+<p>Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>if (miEdad &gt;30)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     alert("Ya eres una persona adulta.");</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>else</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     alert("Eres una persona joven.");</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p> </p>
+<p><strong>Construcción</strong>  <strong><code>switch</code></strong></p>
+<p> Cuando el código se vuelve confuso al utilizar <strong>if ... else</strong> podemos utilizar una estructura condicional es el momento de utilizar<br /> <code>switch</code>. Podemos comprobar distintos posibles valores de una variable y actuar en consecuencia.</p>
+<p>Sintaxis:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>switch (variable) </code>{</span><br /><span style="font-size: 10pt;">valor1:  // Instrucciones que se van a realizar</span><br /><span style="font-size: 10pt;">break; // Rompemos para no ejecutar el resto </span><br /><span style="font-size: 10pt;">valor2: // Instrucciones que se van a realizar</span><br /><span style="font-size: 10pt;">break; </span><br /><span style="font-size: 10pt;">..... // Más comprobaciones</span><br /><span style="font-size: 10pt;">valorn: // Instrucciones a realizar</span><br /><span style="font-size: 10pt;">break;</span><br /><span style="font-size: 10pt;">default: // Que se hacen en le resto de los casos</span><br /><span style="font-size: 10pt;">// No hay break ya que es la última.</span><br /><span style="font-size: 10pt;">}</span></pre>
+</div>
+</div>
+<p> </p>
+<p><code>break</code> rompe tanto bucles como <code>switch</code> y deja de ejecutar ese bloque. Utilizar <code>break</code> no es una buena práctica, salvo en <code>switch</code>.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;">accion=prompt("¿Qué desea realizar?","Nada"); // Esta acción va a pedir una variable al usuario a través de una</span><br /><span style="font-size: 10pt;">                                              // ventana similar a alert, pero que permite introducir datos.</span><br /> <br /><span style="font-size: 10pt;">switch (accion) { </span><br /><span style="font-size: 10pt;">     case "Saltar": document.write("Acabas de Saltar"); break;</span><br /><span style="font-size: 10pt;">     case "Gritar": document.write("Es imposible que puedas gritar más fuerte."); break;</span><br /><span style="font-size: 10pt;">     case "Trotar": document.write("Pareces un caballo de carreras."); break;</span><br /><span style="font-size: 10pt;">     case "Picar": document.write("Le coges a tu compañero una bolsa de patatas"); break;</span><br /><span style="font-size: 10pt;">     default: document.write("Elige algo que puedas hacer la próxima vez");</span><br /><span style="font-size: 10pt;">}</span><br /><span style="font-size: 10pt;"><code>// Se puede comprobar, no es necesario que sean números enteros.</code></span></pre>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id29">
+<div class="iDevice emphasis0" >
+<div id="ta29_108_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Código con errores: </strong></p>
+<p><img src="img0.1.png" width="439" height="289" alt="codigo_if_errores" /></p>
+<p>INTENTA VER LOS ERRORES</p>
+<p>Antes de ver la solución</p>
+<p>Aquí</p>
+<p>más</p>
+<p>abajo</p>
+<p>---------------</p>
+<p></p>
+<ul>
+<li data-start="934" data-end="986">
+<p data-start="937" data-end="986">Falta paréntesis en la condición del primer <code data-start="981" data-end="985">if</code>.</p>
+</li>
+<li data-start="987" data-end="1061">
+<p data-start="990" data-end="1061">Uso incorrecto del operador de asignación (<code data-start="1033" data-end="1036">=</code> en vez de <code data-start="1047" data-end="1051">==</code> o <code data-start="1054" data-end="1059">===</code>).</p>
+</li>
+<li data-start="1062" data-end="1103">
+<p data-start="1065" data-end="1103">Error de sintaxis: <code data-start="1084" data-end="1090">else</code> mal cerrado.</p>
+</li>
+<li data-start="1104" data-end="1151">
+<p data-start="1107" data-end="1151">Hay un <code data-start="1114" data-end="1120">else</code> de más que nunca se ejecutará.</p>
+</li>
+<li data-start="1152" data-end="1225">
+<p data-start="1155" data-end="1225">El valor recibido por <code data-start="1177" data-end="1185">prompt</code> es un string, no se convierte a número.</p>
+</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="26_condiciones_y_bucles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="262_bucles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4.1 Introducción conversiones tipos de datos | Unidad 2_contenidos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 2_contenidos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 2: SINTAXIS DEL LENGUAJE JAVASCRIPT</a></li>
+   <li><a href="21_reglas_bsicas_del_lenguaje.html" class="daddy">2.1 Reglas básicas del lenguaje</a>
+   <ul class="other-section">
+      <li><a href="211_ampliacion_var_y_let.html" class="no-ch">2.1.1 Ampliacion var y let</a></li>
+   </ul>
+   </li>
+   <li><a href="22_comentarios_en_el_cdigo.html" class="no-ch">2.2 Comentarios en el código</a></li>
+   <li><a href="23_palabras_reservadas.html" class="no-ch">2.3 Palabras Reservadas</a></li>
+   <li class="current-page-parent"><a href="24_tipos_de_datos.html" class="current-page-parent daddy">2.4 Tipos de datos</a>
+   <ul>
+      <li id="active"><a href="241_introduccin_conversiones_tipos_de_datos.html" class="active no-ch">2.4.1 Introducción conversiones tipos de datos</a></li>
+      <li><a href="242_profundizacin_conversiones.html" class="no-ch">2.4.2 Profundización conversiones</a></li>
+      <li><a href="243_ejercicios_resueltos.html" class="no-ch">2.4.3 Ejercicios resueltos</a></li>
+   </ul>
+   </li>
+   <li><a href="25_operadores.html" class="daddy">2.5 Operadores</a>
+   <ul class="other-section">
+      <li><a href="251_operadores_de_comparacin.html" class="no-ch">2.5.1 Operadores de comparación</a></li>
+      <li><a href="252_operadores_aritmticos.html" class="no-ch">2.5.2 Operadores aritméticos</a></li>
+      <li><a href="253_operadores_de_asignacin.html" class="no-ch">2.5.3 Operadores de asignación</a></li>
+      <li><a href="254_operadores_booleanos.html" class="no-ch">2.5.4 Operadores booleanos</a></li>
+      <li><a href="255_operadores_bit_a_bit.html" class="no-ch">2.5.5 Operadores bit a bit</a></li>
+      <li><a href="256_operadores_de_desplazamiento_binario.html" class="no-ch">2.5.6 Operadores de desplazamiento binario</a></li>
+      <li><a href="257_operadores_de_objeto.html" class="no-ch">2.5.7 Operadores de objeto</a></li>
+      <li><a href="258_operadores_miscelneos.html" class="no-ch">2.5.8 Operadores misceláneos</a></li>
+   </ul>
+   </li>
+   <li><a href="26_condiciones_y_bucles.html" class="daddy">2.6 Condiciones y bucles</a>
+   <ul class="other-section">
+      <li><a href="261_estructuras_de_control.html" class="no-ch">2.6.1 Estructuras de control</a></li>
+      <li><a href="262_bucles.html" class="no-ch">2.6.2 Bucles</a></li>
+   </ul>
+   </li>
+   <li><a href="27_tarea_final.html" class="daddy">2.7 Tarea final</a>
+   <ul class="other-section">
+      <li><a href="271_criterios_de_correccin_y_entrega.html" class="no-ch">2.7.1 Criterios de corrección y entrega</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="24_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="242_profundizacin_conversiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4.1 Introducción conversiones tipos de datos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id9">
+<div class="iDevice emphasis0" >
+<div id="ta9_113_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Aunque los tipos de datos en JavaScript son muy sencillos, a veces podemos encontrarnos con casos en los que las operaciones no se realizan correctamente, y eso es debido a la conversión de tipos de datos. JavaScript intenta realizar la mejor conversión cuando realiza esas operaciones, pero a veces no es el tipo de conversión que nos interesaría. </p>
+<p style="text-align: justify;">Por ejemplo, cuando intentamos sumar dos números: </p>
+<p style="text-align: justify;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">4 + 5  // resultado = 9</span></p>
+<p style="text-align: justify;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Si uno de esos números está en formato de cadena de texto, <span lang="en">JavaScript</span> lo que hará es intentar convertir el otro número a una cadena y los concatenará, por ejemplo:</span></p>
+<p style="text-align: justify;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">4 + "5"  // resultado = "45"</span></p>
+<p style="text-align: justify;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Otro ejemplo podría ser: </span></p>
+<p style="text-align: justify;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">4 + 5 + "6" // resultado = "96"</span></p>
+<p style="text-align: justify;">Esto puede resultar ilógico pero sí tiene su lógica. La expresión se evalúa de izquierda a derecha. La primera operación funciona correctamente devolviendo el valor de 9 pero al intentar sumarle una cadena de texto "6" <span lang="en">JavaScript</span> lo que hace es convertir ese número a una cadena de texto y se lo concatenará al comienzo del "6".</p>
+<p style="text-align: justify;">Para convertir cadenas a números dispones de las funciones: <strong><code>parseInt()</code> </strong>y <strong><code>parseFloat()</code></strong>.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>parseInt("34")          // resultado = 34</code></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>parseInt("89.76")          // resultado = 89</code></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"> </span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>parseFloat devolverá un entero o un número real según el caso:</code></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>parseFloat("34")          // resultado = 34</code></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>parseFloat("89.76")     // resultado = 89.76</code></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"> </span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><code>4 + 5 + parseInt("6")        // resultado = 15</code></span></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Si lo que deseas es realizar la conversión de números a cadenas, es mucho más sencillo, ya que simplemente tendrás que <a class="glosario">concatenar </a> una cadena vacía al principio, y de esta forma el número será convertido a su cadena equivalente:<code></code></span></p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt;"><code>(" " + 3400)          // resultado = "3400"</code></span></pre>
+<pre><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt;"><code>(" " + 3400).length     // resultado = 4</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">En el segundo ejemplo podemos ver la gran potencia de la evaluación de expresiones. Los paréntesis fuerzan la conversión del número a una cadena. Una cadena de texto en <span lang="en">JavaScript</span> tiene una propiedad asociada con ella que es la longitud (<span lang="en">length</span>), la cuál te devolverá en este caso el número 4, indicando que hay 4 caracteres en esa cadena "3400". La longitud de una cadena es un número, no una cadena.</p>
+<p><strong>No obstante también existen otras funciones de conversión que se verán más adelante. </strong></p>
+<p><span style="font-size: 12pt;"><code></code></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="24_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="242_profundizacin_conversiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
