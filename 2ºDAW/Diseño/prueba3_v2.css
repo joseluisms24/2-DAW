@@ -19,14 +19,14 @@ menu a {
 h2 {
     text-align: center;
     padding-top: 45px;
-    margin-bottom:60px;
+    margin-bottom: 40px;
 }
 
 #contenedor1 {
     display: inline-block;
     text-align: center;
     border: 2px solid black;
-    margin-left: 250px;
+    margin-left: 150px;
     margin-right: 90px;
     padding-bottom: 20px;
     padding-left: 40px;
@@ -35,8 +35,8 @@ h2 {
 }
 
 div > img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
 }
 
 div > a {
@@ -49,7 +49,7 @@ div > a {
     display: inline-block;
     text-align: center;
      border: 2px solid black;
-     margin-bottom: 85px;
+     margin-bottom: 45px;
      margin-left: 90px;
      margin-right: 90px;
     padding-top: 35px;
@@ -70,11 +70,41 @@ div > a {
     margin-right: 80px;
 }
 
+.contenedorImagenes {
+    position: relative;
+}
+
+.imagenesombreada{
+    width: 180px;
+    height: 190px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    display: none;
+}
+
+.textosombreado {
+    position: absolute;
+    display: none;
+    bottom: 15%;
+    color: yellow;
+    
+}
+
+.contenedorImagenes:hover .imagenesombreada {
+    display: block;
+}
+
+.imagenesombreada:hover  ~ .textosombreado {
+    display: block;
+}
+
+
+
 footer {
     text-align: left;
     border: 2px solid black;
     padding-left: 10px;
-   
 }
 
 #flecha{
