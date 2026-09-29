@@ -1,0 +1,17 @@
+#pagina {
+    border: 3px solid red;
+    background-color: orange    ;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.verde {
+    color: green;
+}
+
+.rojo {
+    color: red;
+}
