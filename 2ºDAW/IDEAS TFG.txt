@@ -1,0 +1,11 @@
+Enfoque en el profesional y darle un toque .
+Configurar que el profesional sea capaz de editar las cosas o reorganizar las ideas. Aporte - Trello, booksy, Notion(recordatorios, tareas diarias, gestor de tareas), un poco más de investigación en la competencia	.
+
+La página básica de que va la aplicación.
+Los perfiles son 2: administradores - usuarios.
+
+Posibles mejoras:   
+
+Biblioteca Gigante - gestión de control por accesos - pasos - etc.
+
+PROFUNDIZAR EN LA PREGUNTA.
