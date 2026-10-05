@@ -20,8 +20,8 @@ public alumno(String nombre, int edad, int nota) {
         if (nombre != null  && !nombre.trim().isEmpty()){
             this.nombre = nombre;
         } else {
-            System.out.println("El nombre no puede estar vacío");
-        }
+            throw new IllegalArgumentException("El nombre no puede ser nulo o vacío");
+                }
     }
 
     public int getEdad() {
@@ -78,8 +78,8 @@ public boolean esMayorDeEdad() {
     return edad >= 18;
 }
 
-public void subirNota(double incremento) {
-    nota += incremento;
+public void subirNota(double puntos) {
+    nota += puntos;
     if (nota > 10.0) {
         nota = 10.0; // Limitar la nota máxima a 10
     }
