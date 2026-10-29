@@ -15,3 +15,7 @@ p {
 .rojo {
     color: red;
 }
+
+.ocultar {
+    display: none;
+}

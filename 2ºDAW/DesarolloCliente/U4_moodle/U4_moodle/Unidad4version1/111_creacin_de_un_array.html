@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.1 Creación de un array | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li class="current-page-parent"><a href="1_estructuras_de_datos.html" class="current-page-parent daddy">1. Estructuras de datos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_objeto_array.html" class="current-page-parent daddy">1.1 Objeto Array</a>
+      <ul>
+         <li id="active"><a href="111_creacin_de_un_array.html" class="active no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li><a href="113_borrado_de_elementos_en_un_array.html" class="no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li><a href="114_propiedades_y_mtodos.html" class="no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li><a href="2_funciones.html" class="daddy">2. Funciones</a>
+   <ul class="other-section">
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li><a href="24_funciones_predefinidas_del_lenguaje.html" class="no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_objetos_a_medida.html" class="daddy">3. Objetos a medida</a>
+   <ul class="other-section">
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li><a href="37_mtodos_estticos.html" class="no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="11_objeto_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="112_recorrido_de_un_array.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.1 Creación de un array</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_125_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Para crear un objeto <span lang="en">array</span>, usaremos el constructor <code>new Array( )</code>. Por ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">var miarray= new Array();</span></code><br /><br /><br /></pre>
+<p style="text-align: justify;">Un objeto <span lang="en">array</span> dispone de una propiedad que nos indica su longitud. Esta propiedad es <code>length</code> (longitud, que será 0 para un <span lang="en">array</span> vacío). Si queremos precisar el tamaño del <span lang="en">array</span> durante la inicialización (por ejemplo para que se cargue con valores <code>&lt;null&gt;</code>), podríamos hacerlo pasándole un parámetro al constructor. Por ejemplo, aquí puedes ver como crear un nuevo <span lang="en">array</span> que almacene la información de 40 personas:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>var personas = new Array(40);</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">A diferencia de otros lenguajes de programación, en los que hacer el dimensionamiento previo del <span lang="en">array</span> tiene ventajas, en <span lang="en">JavaScript</span> no nos dará ningún tipo de ventaja especial, ya que podremos asignar un valor a cualquier posición del <span lang="en">array</span> en cualquier momento, esté o no definida previamente. La propiedad <code>length</code> se ajustará automáticamente al nuevo tamaño del <span lang="en">array</span>. Por ejemplo podríamos hacer una asignación tal como personas[53] y eso que nuestro <span lang="en">array</span> es de 40 posiciones. En este caso no ocurrirá ningún problema, ya que la propiedad <code>length</code> del <span lang="en">array</span> se ajustará automáticamente para poder almacenar la posición 53, con lo que la nueva longitud del <span lang="en">array</span> será 54, ya que la primera posición del <span lang="en">array</span> es la [0] y la última es la [53], tendremos por lo tanto 54 elementos en el <span lang="en">array</span>.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">personas[53] =  "Irene Sáinz Veiga";</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>longitud = personas.length;      // asignará a la variable longitud el valor 54</code></span></pre>
+</div>
+</div>
+<p><strong>Introducir datos en un <span lang="en">array</span></strong></p>
+<p style="text-align: justify;">Introducir datos en un <span lang="en">array</span>, es tan simple como crear una serie de sentencias de asignación, una por cada elemento del <span lang="en">array</span>. Ejemplo de un <span lang="en">array</span> que contiene el nombre de los planetas del sistema solar:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">sistemaSolar = new  Array( );</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>sistemaSolar[0] = "Mercurio"; sistemaSolar[1] = "Venus"; sistemaSolar[2] = "Tierra";</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>sistemaSolar[3] = "Marte"; sistemaSolar[4] = "Jupiter"; sistemaSolar[5] = "Saturno";</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>sistemaSolar[6] = "Urano"; sistemaSolar[7] = "Neptuno";</code></span></pre>
+</div>
+</div>
+<p>Esta forma es un poco tediosa a la hora de escribir el código, pero una vez que las posiciones del <span lang="en">array</span> están cubiertas con los datos, acceder a esa información nos resultará muy fácil:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>unPlaneta = sistemaSolar[2];     // almacenará en unPlaneta la cadena "Tierra".</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">Otra forma de crear el <span lang="en">array</span> puede ser mediante el constructor. En lugar de escribir cada sentencia de asignación para cada elemento, lo podemos hacer creando lo que se denomina un "<span lang="en"><strong>array</strong></span> <strong>denso</strong>", aportando al <strong>constructor</strong> <code>array( )</code>, los datos a cubrir separados por comas:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code>sistemaSolar = new array ("Mercurio","Venus","Tierra","Marte","Jupiter","Saturno","Urano","Neptuno");</code></pre>
+</div>
+</div>
+<p style="text-align: justify;">El término de "<span lang="en"><strong>array</strong></span> <strong>denso</strong>" quiere decir que los datos están empaquetados dentro del <span lang="en">array</span>, sin espacios y comenzando en la posición 0.</p>
+<p style="text-align: justify;">Otra forma permitida a partir de la versión de <span lang="en">JavaScript</span> 1.2+, sería aquella en la que no se emplea el constructor y <strong>se definen los <span lang="en">arrays</span> de forma literal</strong>:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>sistemaSolar = ["Mercurio","Venus","Tierra","Marte","Jupiter","Saturno","Urano","Neptuno"];</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">Los corchetes sustituyen a la llamada al constructor <code>new Array()</code>. Hay que tener cuidado con esta forma de creación que quizás no funcione en navegadores antiguos.</p>
+<p style="text-align: justify;">Y para terminar vamos a ver otra forma de creación de un <strong><span lang="en">array</span> mixto</strong> (o también denominado objeto literal), en el que las posiciones son referenciadas con índices de tipo texto o números, mezclándolos de forma aleatoria. Si las posiciones índice están definidas por un texto, para acceder a ellas lo haremos utilizando su nombre y no su número (en este caso si usamos el número nos daría una posición <code>undefined</code>). El formato de creación sería: <code>nombrearray = { "indice1" : valor , indice2 : "valor" , …}</code></p>
+<p>(fíjate que en este caso para definir el <span lang="en">array</span> de tipo mixto tendremos que hacerlo comenzando y terminando con <strong>llaves { }</strong> ). Por ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">var datos = { "numero": 42, "mes"  : "Junio", "hola" : "mundo", 69 : "96" };</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>document.write("&lt;br/&gt;"+datos["numero"]+ " -- " + datos["mes"]+ " -- " + datos["hola"]+ " -- " + datos[69]+ "&lt;br/&gt;");</code></span></pre>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="11_objeto_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="112_recorrido_de_un_array.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

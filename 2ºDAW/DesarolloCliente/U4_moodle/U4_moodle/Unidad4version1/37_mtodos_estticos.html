@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.7 Métodos estáticos | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-41"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li><a href="1_estructuras_de_datos.html" class="daddy">1. Estructuras de datos</a>
+   <ul class="other-section">
+      <li><a href="11_objeto_array.html" class="daddy">1.1 Objeto Array</a>
+      <ul class="other-section">
+         <li><a href="111_creacin_de_un_array.html" class="no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li><a href="113_borrado_de_elementos_en_un_array.html" class="no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li><a href="114_propiedades_y_mtodos.html" class="no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li><a href="2_funciones.html" class="daddy">2. Funciones</a>
+   <ul class="other-section">
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li><a href="24_funciones_predefinidas_del_lenguaje.html" class="no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_objetos_a_medida.html" class="current-page-parent daddy">3. Objetos a medida</a>
+   <ul>
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li id="active"><a href="37_mtodos_estticos.html" class="active no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="36_herencia_y_sobrecarga.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="38_interfaces.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.7 Métodos estáticos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id58">
+<div class="iDevice emphasis0" >
+<div id="ta58_108_2" class="block iDevice_content">
+<div class="exe-text"><p data-start="219" data-end="377">Un <strong data-start="237" data-end="256">método estático</strong> es una función que <strong data-start="276" data-end="312">pertenece a la clase en sí misma</strong>, <strong data-start="314" data-end="337">no a las instancias</strong> (los objetos creados a partir de ella).</p>
+<ul data-start="379" data-end="483">
+<li data-start="379" data-end="424">
+<p data-start="381" data-end="424">Se definen con la palabra clave <code data-start="413" data-end="421">static</code>.</p>
+</li>
+<li data-start="425" data-end="483">
+<p data-start="427" data-end="483">Se invocan <strong data-start="438" data-end="456">desde la clase</strong>, <strong data-start="458" data-end="480">no desde un objeto</strong>.</p>
+</li>
+</ul>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><img src="img0.11.png" width="663" height="256" alt="" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id59">
+<div class="iDevice emphasis0" >
+<div id="ta59_109_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="img0.12.png" width="753" height="299" alt="" /></p>
+<p></p>
+<p></p>
+<p>¿Cuándo usas métodos estáticos?</p>
+<p data-start="2207" data-end="2241">Usa un <strong data-start="2214" data-end="2233">método estático</strong> cuando:</p>
+<ul data-start="2242" data-end="2427">
+<li data-start="2242" data-end="2330">
+<p data-start="2244" data-end="2330">La operación <strong data-start="2257" data-end="2297">no depende de una instancia concreta</strong>, sino del conjunto de objetos.</p>
+</li>
+<li data-start="2331" data-end="2427">
+<p data-start="2333" data-end="2427">Es una <strong data-start="2340" data-end="2352">utilidad</strong> o <strong data-start="2355" data-end="2375">función auxiliar</strong> (por ejemplo, validaciones o cálculos generales).</p>
+</li>
+</ul>
+<p><img src="img1.9.png" width="441" height="199" alt="" /></p>
+<p></p>
+<p><strong>Herencia y métodos estáticos</strong></p>
+<p>Los métodos estáticos también se heredan</p>
+<p><strong><img src="img2.8.png" width="483" height="342" alt="" /></strong></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="36_herencia_y_sobrecarga.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="38_interfaces.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

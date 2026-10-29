@@ -1,0 +1,27 @@
+@import url(/../normalize.css);
+@import url(header.scss);
+* {
+  box-sizing: border-box;
+  background-color: red; }
+  * h2 {
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 60px; }
+  * #contenedor1 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 500px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  * #contenedor2 {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 500px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+/*# sourceMappingURL=pruebafestivalconsass.css.map */

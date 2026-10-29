@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.4 Funciones predefinidas del lenguaje | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li><a href="1_estructuras_de_datos.html" class="daddy">1. Estructuras de datos</a>
+   <ul class="other-section">
+      <li><a href="11_objeto_array.html" class="daddy">1.1 Objeto Array</a>
+      <ul class="other-section">
+         <li><a href="111_creacin_de_un_array.html" class="no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li><a href="113_borrado_de_elementos_en_un_array.html" class="no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li><a href="114_propiedades_y_mtodos.html" class="no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_funciones.html" class="current-page-parent daddy">2. Funciones</a>
+   <ul>
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li id="active"><a href="24_funciones_predefinidas_del_lenguaje.html" class="active no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_objetos_a_medida.html" class="daddy">3. Objetos a medida</a>
+   <ul class="other-section">
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li><a href="37_mtodos_estticos.html" class="no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="23_funciones_anidadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_funciones_annimas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.4 Funciones predefinidas del lenguaje</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_124_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Has visto en unidades anteriores un montón de objetos con sus propiedades y métodos. Si te das cuenta todos los métodos en realidad son funciones (llevan siempre paréntesis con o sin parámetros). Pues bien en <span lang="en">JavaScript</span>, disponemos de algunos elementos que necesitan ser tratados a escala global y que no pertenecen a ningún objeto en particular (o que se pueden aplicar a cualquier objeto).</p>
+<div class="FreeTextfpdIdevice" id="id33">
+<div class="iDevice emphasis0">
+<div id="ta33_73" class="block">
+<table border="1" style="width: 57.2454%;">
+<tbody>
+<tr>
+<td style="width: 57.2671%; text-align: center;" colspan="2"><span style="font-size: 12pt;"><strong>Propiedades globales en JavaScript</strong></span></td>
+</tr>
+<tr>
+<td style="width: 7.08118%;"><strong>Propiedad</strong></td>
+<td style="width: 50.1859%;"><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td style="width: 7.08118%;"><span style="font-size: 12pt;"><code>Infinity</code></span></td>
+<td style="width: 50.1859%;"><span style="font-size: 12pt;">Un valor numérico que representa el infinito positivo/negativo.</span></td>
+</tr>
+<tr>
+<td style="width: 7.08118%;"><span style="font-size: 12pt;"><code>NaN</code></span></td>
+<td style="width: 50.1859%;"><span style="font-size: 12pt;">Valor que no es numérico "<span lang="en">Not a Number</span>".</span></td>
+</tr>
+<tr>
+<td style="width: 7.08118%;"><span style="font-size: 12pt;"><code>undefined()</code></span></td>
+<td style="width: 50.1859%;"><span style="font-size: 12pt;">Indica que a esa variable no le ha sido asignado un valor.</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><br />Te mostraremos aquí una lista de funciones predefinidas, que se pueden utilizar a nivel global en cualquier parte de tu código de <span lang="en">JavaScript</span>. Estas funciones no están asociadas a ningún objeto en particular. Típicamente, estas funciones te permiten convertir datos de un tipo a otro tipo.</p>
+<p style="text-align: justify;"></p>
+</div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id34">
+<div class="iDevice emphasis0">
+<div id="ta34_73" class="block">
+<table border="1" style="width: 57.2544%;">
+<tbody>
+<tr>
+<td style="width: 57.2317%; text-align: center;" colspan="2"><strong><span style="font-size: 12pt;">Funciones globales en JavaScript</span></strong></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>decodeURI()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Decodifica los caracteres especiales de una <acronym title="Uniform Resource Locator. Localizador Uniforme de Recursos." lang="en">URL</acronym> excepto:<code> , / ? : @ &amp; = + $ #</code></span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>decodeURIComponent()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Decodifica todos los caracteres especiales de una <span title="en">URL</span>.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>encodeURI()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Codifica los caracteres especiales de una <span lang="en">URL</span> excepto: <code>, / ? : @ &amp; = + $ #</code></span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>encodeURIComponent()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Codifica todos los caracteres especiales de una <span lang="en">URL</span>.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>escape()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Codifica caracteres especiales en una cadena, excepto: <code>* @ - _ + . / </code></span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>eval()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Evalúa una cadena y la ejecuta si contiene código u operaciones.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>isFinite()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Determina si un valor es un número finito válido.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>isNaN()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Determina cuando un valor no es un número.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>Number()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Convierte el valor de un objeto a un número.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>parseFloat()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Convierte una cadena a un número real.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>parseInt()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Convierte una cadena a un entero.</span></td>
+</tr>
+<tr>
+<td style="width: 11.7747%;"><span style="font-size: 12pt;"><code>unescape()</code></span></td>
+<td style="width: 45.457%;"><span style="font-size: 12pt;">Decodifica caracteres especiales en una cadena, excepto: <code>* @ - _ + . / </code></span></td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplo de la <strong>función</strong> <code>eval()</code>:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">&lt;script type="text/javascript"&gt;</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>     eval("x=50;y=30;document.write(x*y)");     // Imprime 1500</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     document.write("&lt;br /&gt;" + eval("8+6"));      // Imprime 14</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     document.write("&lt;br /&gt;" + eval(x+30));       // Imprime 80</code></span></pre>
+<pre><code><span style="font-size: 10pt;">&lt;/script&gt;</span> <br /><br /></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id35">
+<div class="iDevice emphasis0" >
+<div id="ta35_108_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><code><span style="font-size: 12pt;"><strong>Veamos algunos ejemplos con más detalle: </strong></span></code></p>
+<p style="text-align: justify;"><code><span style="font-size: 12pt;"><strong>escape()</strong>.La función escape()  tiene como argumento una cadena de texto y devuelve dicha cadena sustituida por su codificación en ASCII. Si por ejemplo quisiéramos saber la codificación del carácter (?), podríamos utilizar el siguiente ejemplo y verificar que obtendríamos la codificación %3EF.</span></code><code></code></p>
+<p><img src="ejemplo_escape.JPG" alt="" width="625" height="369" />  <img src="resultado_escape.JPG" alt="" width="520" height="150" /></p>
+<p style="text-align: justify;"><strong>unescape(). </strong>Es la función opuesta a escape(). Es decir, que esta función decodifica los caracteres que estén codificados. </p>
+<p style="text-align: justify;"><img src="ejemplo_unescape.JPG" alt="" width="620" height="364" /><img src="http://localhost:51235/previews/C__Users_david_Desktop_CURSO_19_20_Entorno_cliente_UNIDADES_EXELEARNING_UNIDAD4_resultado_unescape.JPG" alt="" width="476" height="138" style="font-size: 16.8px;" /><img src="resultado_unescape.JPG" alt="" width="531" height="147" /></p>
+<p style="text-align: justify;"><strong>eval()</strong>. Esta función tiene como argumento una expresión y devuelve el valor de la misma para poder ser ejecutada como código JavaScript. El siguiente ejemplo permite ingresar al usuario una operación numérica y a continuación muestra el resultado de dicha operación. Le ponemos la operación 3+2.</p>
+<p style="text-align: justify;"><img src="ejemplo_eval.JPG" alt="" width="635" height="366" /> <img src="resultado_eval.JPG" alt="" width="508" height="142" /></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"><strong>isFinite().</strong> Esta función comprueba si el valor pasado como argumento corresponde o no a un número finito. En JavaScript un valor se define como finito si se encuentra en el rango de ±1.7976931348623157^10<sup>308 </sup>. Si el argumento no se encuentra en este rango o no es un valor numérico, la función devuelve false, en caso contrario devuelve true. Esta función es útil a la hora de realizar comprobaciones en sentencias condicionales  y decidir en base al resultado si ejecutar una serie de instrucciones u otras. De este modo podemos comprobar que los resultados de las operaciones matemáticas no sobrepasen los límites numéricos de JavaScript y evitar la generación de errores de este tipo en nuestra aplicación web. En el siguiente ejemplo ante los argumentos 6 y m, el resultado es: </p>
+<p style="text-align: justify;"><img src="ejemplo_isFinite.JPG" alt="" width="641" height="461" /><img src="resultado_isFinite.JPG" alt="" width="323" height="67" /></p>
+<p style="text-align: justify;"><strong>isNan(). </strong>es el acrónimo de <em>is Not a Number</em> (no es un número). Esta función evalúa si el objeto pasado como argumento es de tipo numérico. El siguiente ejemplo evalúa si el dato ingresado por el usuario es de tipo numérico y en base a eso, utilizando sentencia condicional, ejecutamos una instrucción u otra. Para el siguiente ejemplo hemos introducido el valor "y": </p>
+<p style="text-align: justify;"><img src="ejemplo_isnan.JPG" alt="" width="651" height="438" /> <img src="resultado_isnan.JPG" alt="" width="370" height="75" /></p>
+<p style="text-align: justify;"><strong>Number(). </strong>La función Number() convierte el objeto pasado como argumento en un número. Si la conversión falla, la función devuelve NaN(Not a Number). Si el parámetro es un objeto de tipo <em>Date, </em>la función Number() devolverá el número de milisegundos transcurridos desde la medianoche del 1 de enero de 1970 hasta la fecha actual. </p>
+<p style="text-align: justify;"><img src="ejemplo_number.JPG" alt="" width="637" height="416" /> <img src="resultado_number.JPG" alt="" width="259" height="92" /></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">https://www.w3schools.com/jsref/jsref_decodeuri.asp</p>
+<p><code></code></p>
+<p><code></code></p>
+<p><code></code></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="23_funciones_anidadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="25_funciones_annimas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

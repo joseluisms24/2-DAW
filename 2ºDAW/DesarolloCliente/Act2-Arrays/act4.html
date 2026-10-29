@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Qué vamos a comer esta semana?</h1>
+    <p id="texto"></p>
+    <script>
+        var comidas = { "lunes": "lentejas", "martes": "garbanzos", "miercoles": "arroz", "jueves":"pasta", "viernes" : "guiso", "sabado" : "carne"};
+        let dia = prompt("Escribe el día de la semana en el que desea saber la comida");
+        document.getElementById('texto').innerHTML=(`El ${dia} vamos a comer ${comidas[dia]}`);
+    </script>
+</body>
+</html>

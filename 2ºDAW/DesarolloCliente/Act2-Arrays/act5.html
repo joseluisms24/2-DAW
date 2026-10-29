@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 5</h1>
+    <p id="texto"></p>
+    <p id="texto1"></p>
+    <p id="texto2"></p>
+    <p id="texto3"></p>
+
+    <script>
+        let numPalabra = parseInt(prompt("Dime el número de palabras a introducir: "));
+         let palabras = new Array(numPalabra);
+         let contenidoHTML = '';
+         
+        for (let i = 1; i <= numPalabra; i++) {
+            palabraSuelta=prompt("Escribe la palabra numero "+i);
+            palabras[(i-1)]=palabraSuelta;
+            contenidoHTML+=palabras[(i-1)]+",";
+        }
+        document.getElementById('texto').innerHTML="El contenido del array es "+contenidoHTML;
+        document.getElementById('texto1').innerHTML="La primera palabra es: "+palabras[0];
+        document.getElementById('texto2').innerHTML="La ultima palabra es: "+palabras[2];
+        document.getElementById('texto3').innerHTML="El numero de palabras presentes en el array es: "+palabras.length;
+
+
+
+    </script>
+</body>
+</html>

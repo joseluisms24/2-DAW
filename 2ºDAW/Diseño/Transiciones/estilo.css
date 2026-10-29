@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    overflow: hidden;
+}
+
+.bola {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+
+    animation:
+        movimiento 4s infinite linear,
+        colores 1s infinite linear;
+
+    box-shadow: 0 0 100px currentColor;
+}
+
+/* Movimiento por los cuatro lados */
+@keyframes movimiento {
+    0%, 100% {
+        left: calc(50% - 40px);
+        top: 0;
+    }
+
+    25% {
+        left: calc(100% - 80px);
+        top: calc(50% - 40px);
+    }
+
+    50% {
+        left: calc(50% - 40px);
+        top: calc(100% - 80px);
+    }
+
+    75% {
+        left: 0;
+        top: calc(50% - 40px);
+    }
+}
+
+/* Colores cambiantes */
+@keyframes colores {
+    0%, 100% {
+        background: red;
+        color: red;
+    }
+
+    25% {
+        background: cyan;
+        color: cyan;
+    }
+
+    50% {
+        background: lime;
+        color: lime;
+    }
+
+    75% {
+        background: magenta;
+        color: magenta;
+    }
+}

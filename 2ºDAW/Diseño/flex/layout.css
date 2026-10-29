@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.c_navegador {
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.main1 {
+    flex-direction: column;
+    flex: 0 1 auto;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 60%;
+}
+
+.Noticias-container {
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.Noticias-container > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Noticias-container > h3 {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+p.c_fecha {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.c_publicidad {
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.c_publicidad > h3 {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.c_publicidad > p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.c_publicidad > .c_seguirLeyendo {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 3px;
+}
+
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+article > img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-right: 10px;
+}
+
+.main3 {
+    flex-direction: row;
+    flex: 0 1 auto;
+    margin: 2px;
+    padding: 10px;
+    width: 60%;
+}
+
+.main3 > div > h4 {
+    padding: 5px;
+    margin: 0px;
+}
+
+.main3 > div:nth-child(1) > p.c_seguirLeyendo {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.main3 > div > p {
+    padding: 0px;
+    margin: 0px;
+}
+
+div > p.c_seguirLeyendo {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+footer {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer nav {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+footer nav a {
+    padding-right: 5px;
+}
+
+#copyright {
+    text-align: center;
+    padding-right: 10px;
+}

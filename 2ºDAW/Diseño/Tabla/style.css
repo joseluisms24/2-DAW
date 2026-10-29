@@ -1,0 +1,121 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  border: 1px solid rgb(199, 199, 199);
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+}
+
+div {
+  /* Flexbox para centrar elementos */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column;
+}
+
+#fila1 {
+  transition: transform 3s;
+
+}
+
+#fila1:hover {
+  transform: scale(1.0) translate(5px, -5px);
+  opacity: 0.4;
+}
+
+#fila2 {
+  transition: transform 3s;
+  
+
+}
+
+#fila2:hover {
+  transform: scale(1.3) translate(10px, -10px);
+  opacity: 0.4;
+}
+#fila3 {
+  transition: transform 3s;
+
+}
+
+#fila3:hover {
+  transform: scale(1.3) translate(10px, -10px);
+  opacity: 0.4;
+}
+
+#fila4 {
+  transition: transform 3s;
+
+}
+
+#fila4:hover {
+  transform: scale(1.3) translate(10px, -10px);
+  opacity: 0.4;
+}
+#fila5 {
+  transition: transform 3s;
+
+}
+
+#fila5:hover {
+  transform: scale(1.3) translate(10px, -10px);
+  opacity: 0.4;
+}
+
+
+@media (max-width: 800px) {
+  div {
+    display: block;
+  }
+  table {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    text-align: left;
+  }
+  td {
+    padding-left: 60%;
+  }
+  td:first-child::before {
+    position: absolute;
+    left: 8%;
+    content: "NOMBRE ";
+  }
+  td:nth-child(2)::before {
+    position: absolute;
+    left: 8%;
+    content: "APELLIDOS ";
+  }
+  td:nth-child(3)::before {
+    position: absolute;
+    left: 8%;
+    content: "CARGO ";
+  }
+  td:nth-child(4)::before {
+    position: absolute;
+    left: 8%;
+    content: "TWITTER ";
+  }
+  td:nth-child(5)::before {
+    position: absolute;
+    left: 8%;
+    content: "ID ";
+  }
+
+
+
+}

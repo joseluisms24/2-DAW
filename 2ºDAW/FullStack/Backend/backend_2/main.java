@@ -2,7 +2,7 @@ package backend_2;
 
 public class main {
     public static void main(String[] args) {
-        alumno alumno1 = new alumno("Juan", 20, 8);
+        alumno alumno1 = new alumno("Juan", -10, 1);
 
         System.out.println("Alumno: " + alumno1.getNombre());
         System.out.println("Edad: " + alumno1.getEdad());
@@ -12,7 +12,7 @@ public class main {
         alumno1.subirNota(1.0);
         System.out.println("Nota actualizada: " + alumno1.getNota());
 
-        alumno alumno2 = new alumno("Maria", 22, 9);
+        alumno alumno2 = new alumno("Maria", 12, 9);
 
         System.out.println("Alumno: " + alumno2.getNombre());
         System.out.println("Edad: " + alumno2.getEdad());

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2. Funciones | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li><a href="1_estructuras_de_datos.html" class="daddy">1. Estructuras de datos</a>
+   <ul class="other-section">
+      <li><a href="11_objeto_array.html" class="daddy">1.1 Objeto Array</a>
+      <ul class="other-section">
+         <li><a href="111_creacin_de_un_array.html" class="no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li><a href="113_borrado_de_elementos_en_un_array.html" class="no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li><a href="114_propiedades_y_mtodos.html" class="no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="2_funciones.html" class="active daddy">2. Funciones</a>
+   <ul>
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li><a href="24_funciones_predefinidas_del_lenguaje.html" class="no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_objetos_a_medida.html" class="daddy">3. Objetos a medida</a>
+   <ul class="other-section">
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li><a href="37_mtodos_estticos.html" class="no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="13_set.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_parmetros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2. Funciones</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id11">
+<div class="iDevice emphasis0" >
+<div id="ta11_119_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En unidades anteriores ya has visto y utilizado alguna vez funciones. <strong>Una función es la definición de un conjunto de acciones pre-programadas</strong>. Las funciones se llaman a través de eventos o bien mediante comandos desde nuestro <span lang="en">script</span>.</p>
+<p style="text-align: justify;">Siempre que sea posible, tienes que diseñar funciones que puedas reutilizar en otras aplicaciones, de esta forma, tus funciones se convertirán en pequeños bloques constructivos que te permitirán ir más rápido en el desarrollo de nuevos programas.</p>
+<p style="text-align: justify;">Si conoces otros lenguajes de programación, quizás te suene el término de <em>subrutina o procedimiento</em>. En <span lang="en">JavaScript</span> no vamos a distinguir entre <strong>procedimientos</strong> (que ejecutan acciones), o <strong>funciones</strong> (que ejecutan acciones y devuelven valores). <strong>En <span lang="en">JavaScript</span> siempre se llamarán funciones</strong>.</p>
+<p style="text-align: justify;"><strong>Una función</strong> es capaz de devolver un valor a la instrucción que la invocó, pero esto no es un requisito obligatorio en <span lang="en">JavaScript</span>. Cuando una función devuelve un valor, la instrucción que llamó a esa función, la tratará como si fuera una expresión.</p>
+<p>Te mostraré algunos ejemplos en un momento, pero antes de nada, vamos a ver la sintaxis formal de una función:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code><span style="font-size: 10pt;">function nombreFunción ( [parámetro1]....[parámetroN] )</span></code></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p>Si nuestra función va a <strong>devolver algún valor</strong> emplearemos la palabra reservada <code>return</code>, para hacerlo. Ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>function nombreFunción ( [parámetro1]....[parámetroN] )</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     // instrucciones</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     return valor;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">Los nombres que puedes asignar a una función, tendrán las mismas restricciones que tienen los elementos <acronym title="HyperText Markup Language. Lenguaje de marcas de hipertexto."><span lang="en">HTML</span></acronym> y las variables en <span lang="en">JavaScript</span>. Deberías asignarle un nombre que realmente la identifique, o que indique qué tipo de acción realiza. Puedes usar palabras compuestas como chequearMail o calcularFecha, y fíjate que las funciones suelen llevar un verbo, puesto que las funciones son elementos que realizan acciones.</p>
+<p style="text-align: justify;">Una recomendación que te hacemos, es la de que las funciones sean muy específicas, es decir que no realicen tareas adicionales a las inicialmente propuestas en esa función.</p>
+<p style="text-align: justify;">Para realizar una llamada a una función lo podemos hacer con:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>nombreFuncion( );  // Esta llamada ejecutaría las instrucciones programadas dentro de la función.</code></span></pre>
+</div>
+</div>
+<p>Otro ejemplo de uso de una función en una asignación:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>variable=nombreFuncion( );  // En este caso la función devolvería un valor que se asigna a la variable.</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">Las funciones en <span lang="en">JavaScript</span> también son objetos, y como tal tienen métodos y propiedades. Un método, aplicable a cualquier función puede ser <code>toString()</code>, el cuál nos devolverá el código fuente de esa función.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="13_set.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_parmetros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

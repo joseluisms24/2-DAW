@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.4 Propiedades y métodos | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li class="current-page-parent"><a href="1_estructuras_de_datos.html" class="current-page-parent daddy">1. Estructuras de datos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_objeto_array.html" class="current-page-parent daddy">1.1 Objeto Array</a>
+      <ul>
+         <li><a href="111_creacin_de_un_array.html" class="no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li><a href="113_borrado_de_elementos_en_un_array.html" class="no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li id="active"><a href="114_propiedades_y_mtodos.html" class="active no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li><a href="2_funciones.html" class="daddy">2. Funciones</a>
+   <ul class="other-section">
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li><a href="24_funciones_predefinidas_del_lenguaje.html" class="no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_objetos_a_medida.html" class="daddy">3. Objetos a medida</a>
+   <ul class="other-section">
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li><a href="37_mtodos_estticos.html" class="no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="113_borrado_de_elementos_en_un_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="115_arrays_paralelos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.4 Propiedades y métodos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id19">
+<div class="iDevice emphasis0" >
+<div id="ta19_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Vamos a ver a continuación, las propiedades y métodos que podemos usar con cualquier <span lang="en">array</span> que utilicemos en <span lang="en">Javascript</span>.</p>
+<div class="FreeTextfpdIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_73" class="block">
+<p><strong>Propiedades del objeto <span lang="en">array</span>:</strong></p>
+<table class="tabla" summary="Esta tabla muestra todas las propiedades y sus  descripciones, que pueden ser utilizadas con el objeto Array."><caption>Propiedades del objeto Array</caption>
+<thead>
+<tr>
+<th scope="col">Propiedad</th>
+<th scope="col">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>constructor</code></td>
+<td>Devuelve la función que creó el prototipo del objeto <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code lang="en">length</code></td>
+<td>Ajusta o devuelve el número de elementos en un <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code lang="en">prototype</code></td>
+<td>Te permite añadir propiedades y métodos a un objeto.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Métodos del objeto <span lang="en">array</span>:</strong></p>
+<table class="tabla" summary=" Esta tabla muestra todos los métodos y sus descripciones, que pueden ser utilizados con el objeto Array."><caption>Métodos del objeto Array</caption>
+<thead>
+<tr>
+<th scope="col">Métodos</th>
+<th scope="col">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>concat()</code></td>
+<td>Une dos o más <span lang="en">arrays</span>, y devuelve una copia de los <span lang="en">arrays</span> unidos.</td>
+</tr>
+<tr>
+<td><code>join()</code></td>
+<td>Une todos los elementos de un <span lang="en">array</span> en una cadena de texto.</td>
+</tr>
+<tr>
+<td><code>pop()</code></td>
+<td>Elimina el último elemento de un <span lang="en">array</span> y devuelve ese elemento.</td>
+</tr>
+<tr>
+<td><code>push()</code></td>
+<td>Añade nuevos elementos al final de un <span lang="en">array</span>, y devuelve la nueva longitud.</td>
+</tr>
+<tr>
+<td><code>reverse()</code></td>
+<td>Invierte el orden de los elementos en un <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code>shift()</code></td>
+<td>Elimina el primer elemento de un <span lang="en">array</span>, y devuelve ese elemento.</td>
+</tr>
+<tr>
+<td><code>slice()</code></td>
+<td>Selecciona una parte de un <span lang="en">array</span> y devuelve el nuevo <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code>sort()</code></td>
+<td>Ordena los elementos de un <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code>splice()</code></td>
+<td>Añade/elimina elementos a un <span lang="en">array</span>.</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Convierte un <span lang="en">array</span> a una cadena y devuelve el resultado.</td>
+</tr>
+<tr>
+<td><code>unshift()</code></td>
+<td>Añade nuevos elementos al comienzo de un <span lang="en">array</span>, y devuelve la nueva longitud.</td>
+</tr>
+<tr>
+<td><code>valueOf()</code></td>
+<td>Devuelve el valor primitivo de un <span lang="en">array</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_73" class="block">
+<p>Ejemplo de algunos métodos del objeto <span lang="en">array</span>:</p>
+<p><strong>Método <code>reverse()</code></strong>:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>&lt;script type="text/javascript"&gt;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     var frutas = ["Plátano", "Naranja", "Manzana", "Melocotón"];</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     document.write(frutas.reverse());          // Imprimirá:  Melocotón,Manzana,Naranja,Plátano </code></span></pre>
+<pre><code><span style="font-size: 10pt;">&lt;/script&gt;</span> </code></pre>
+</div>
+</div>
+<p><strong>Método <code>slice()</code>:</strong></p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>&lt;script type="text/javascript"&gt;</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>var frutas = ["Plátano", "Naranja", "Manzana", "Melocotón"];</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>document.write(frutas .slice(0,1) + "&lt;br /&gt;");     // imprimirá: Plátano</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>document.write(frutas .slice(1) + "&lt;br /&gt;");          // imprimirá: Naranja,Manzana,Melocotón</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>document.write(frutas .slice(-2) + "&lt;br /&gt;");          // imprimirá: Manzana, Melocotón</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>document.write(frutas + "&lt;br /&gt;");               // imprimirá: Plátano,Naranja,Manzana,Melocotón </code></span></pre>
+<pre><code><span style="font-size: 10pt;">&lt;/script&gt;</span> </code></pre>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id33">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Más ejemplos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta33_108_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="ejemplo_push.JPG" alt="" width="628" height="425" />   <img src="resultado_ejemplo_push.JPG" alt="" width="407" height="89" /></p>
+<p><img src="ejemplo_concat.JPG" alt="" width="621" height="422" /><img src="resultado_concat.JPG" alt="" width="592" height="57" /></p>
+<p><img src="ejemplo_join.JPG" alt="" width="611" height="355" /><img src="resuultado_join.JPG" width="348" height="72" /></p>
+<p><img src="ejemplo_reverse.JPG" alt="" width="607" height="370" /><img src="resultado_reverse.JPG" alt="" width="268" height="73" /></p>
+<p><img src="ejemplo_unshift.JPG" alt="" width="755" height="370" /><img src="resultado_unshift.JPG" alt="" width="466" height="73" style="font-size: 1.05em;" /></p>
+<p><img src="ejemplo_shift.JPG" alt="" width="750" height="385" /><img src="resultado_shift.JPG" alt="" width="476" height="103" /></p>
+<p><img src="ejemplo_pop.JPG" alt="" width="739" height="380" /><img src="resultado_pop.JPG" alt="" width="397" height="95" /></p>
+<p>El método slice() puede llevar uno o dos argumentos. Veamos lo que significa:</p>
+<p>- Si lleva un solo argumento y es un número positivo, devuelve una subcadena que empieza en la posición indicada por ese argumento y acaba en el final del array.</p>
+<p>- Si lleva un solo argumento y es un número negativo, devuelve una subcadena que empieza en la posición indicada por ese argumento  (contando en el array desde el final) y acaba en el final del array.</p>
+<p>- Si lleva dos argumentos, el primero indica la posición inicial de la cadena a extraer (que sí se incluye en la nueva subcadena) y el segundo argumento es donde acaba la subcadena (que no se incluye).</p>
+<p><img src="ejemplo_slice.JPG" alt="" width="701" height="456" /><img src="resultado_slice.JPG" alt="" width="447" height="121" /></p>
+<p><img src="ejemplo_sort.JPG" alt="" width="588" height="386" /><img src="resultado_sort.JPG" alt="" width="362" height="88" /></p>
+<p></p>
+<p style="text-align: justify;">El método splice() es el más complejo del objeto Array. Con él es posible añadir o eliminar objetos de un array. Los dos primeros parámetros son obligatorios, mientras que el tercero es opcional. El primer parámetro especifica la posición en la cual añadiremos o eliminaremos los elementos. El segundo parámetro especifica cuántos elementos eliminaremos. El tercer y último parámetro son los nuevos elementos que añadiremos al array. Veamos el siguiente ejemplo: </p>
+<p style="text-align: justify;"><img src="ejemplo_splice.JPG" alt="" width="766" height="499" /><img src="resultado_splice.JPG" alt="" width="287" height="103" /></p>
+<p style="text-align: justify;">Ver más ejemplos en:</p>
+<p style="text-align: justify;">https://www.w3schools.com/js/js_array_methods.asp</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="113_borrado_de_elementos_en_un_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="115_arrays_paralelos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

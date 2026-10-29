@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Qué vamos a comer esta semana?</h1>
+    <p id="texto"></p>
+    <script>
+         comida = new Array ("lentejas","garbanzos","arroz","pasta","guiso","carne");
+         dias = new Array ("lunes","martes","miercoles","jueves","viernes","sabado");
+        for (let i = 0; i < comida.length; i++) {
+            let plato =`los ${dias[i]} vamos a comer ${comida[i]}, `;
+            document.getElementById('texto').innerHTML+=plato;
+            
+        }
+
+    </script>
+</body>
+</html>

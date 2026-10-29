@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.3 Borrado de elementos en un array | Unidad 4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="David Vázquez Jiménez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad 4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">UNIDAD 4: PROGRAMACIÓN CON ARRAYS, FUNCIONES Y OBJETOS DEFINIDOS POR EL USUARIO</a></li>
+   <li class="current-page-parent"><a href="1_estructuras_de_datos.html" class="current-page-parent daddy">1. Estructuras de datos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_objeto_array.html" class="current-page-parent daddy">1.1 Objeto Array</a>
+      <ul>
+         <li><a href="111_creacin_de_un_array.html" class="no-ch">1.1.1 Creación de un array</a></li>
+         <li><a href="112_recorrido_de_un_array.html" class="no-ch">1.1.2 Recorrido de un array</a></li>
+         <li id="active"><a href="113_borrado_de_elementos_en_un_array.html" class="active no-ch">1.1.3 Borrado de elementos en un array</a></li>
+         <li><a href="114_propiedades_y_mtodos.html" class="no-ch">1.1.4 Propiedades y métodos</a></li>
+         <li><a href="115_arrays_paralelos.html" class="no-ch">1.1.5 Arrays paralelos</a></li>
+         <li><a href="116_arrays_multidimensionales.html" class="no-ch">1.1.6 Arrays multidimensionales</a></li>
+      </ul>
+      </li>
+      <li><a href="117_actividades_con_arrays.html" class="no-ch">1.1.7 Actividades con arrays</a></li>
+      <li><a href="12_map.html" class="no-ch">1.2 Map</a></li>
+      <li><a href="13_set.html" class="no-ch">1.3 Set</a></li>
+   </ul>
+   </li>
+   <li><a href="2_funciones.html" class="daddy">2. Funciones</a>
+   <ul class="other-section">
+      <li><a href="21_parmetros.html" class="no-ch">2.1 Parámetros</a></li>
+      <li><a href="22_mbito_de_las_variables.html" class="no-ch">2.2 Ámbito de las variables</a></li>
+      <li><a href="23_funciones_anidadas.html" class="no-ch">2.3 Funciones anidadas</a></li>
+      <li><a href="24_funciones_predefinidas_del_lenguaje.html" class="no-ch">2.4 Funciones predefinidas del lenguaje</a></li>
+      <li><a href="25_funciones_annimas.html" class="no-ch">2.5 Funciones anónimas</a></li>
+      <li><a href="26_funciones_flecha.html" class="no-ch">2.6 Funciones flecha</a></li>
+      <li><a href="27_actividades_con_funciones.html" class="no-ch">2.7 Actividades con funciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_objetos_a_medida.html" class="daddy">3. Objetos a medida</a>
+   <ul class="other-section">
+      <li><a href="31_propiedades.html" class="no-ch">3.1 Propiedades</a></li>
+      <li><a href="32_mtodos.html" class="no-ch">3.2 Métodos</a></li>
+      <li><a href="33_recorrer_un_objeto.html" class="no-ch">3.3 Recorrer un objeto</a></li>
+      <li><a href="34_ejemplo_clase_persona.html" class="no-ch">3.4 Ejemplo clase Persona</a></li>
+      <li><a href="35_ampliacin.html" class="no-ch">3.5 Ampliación</a></li>
+      <li><a href="36_herencia_y_sobrecarga.html" class="no-ch">3.6 Herencia y sobrecarga</a></li>
+      <li><a href="37_mtodos_estticos.html" class="no-ch">3.7 Métodos estáticos</a></li>
+      <li><a href="38_interfaces.html" class="no-ch">3.8 Interfaces</a></li>
+      <li><a href="39_ejemplo_completo.html" class="no-ch">3.9 Ejemplo completo</a></li>
+      <li><a href="37_actividades_con_objetos.html" class="no-ch">3.7 Actividades con objetos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_tarea_final.html" class="daddy">4. Tarea final</a>
+   <ul class="other-section">
+      <li><a href="41_enunciado_ejercicio_1.html" class="no-ch">4.1 Enunciado ejercicio 1</a></li>
+      <li><a href="42_enunciado_ejercicio_2.html" class="no-ch">4.2 Enunciado ejercicio 2</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="112_recorrido_de_un_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="114_propiedades_y_mtodos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.3 Borrado de elementos en un array</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Para borrar cualquier dato almacenado en un elemento del <span lang="en">array</span>, lo podrás hacer ajustando su valor a <span lang="en">null</span> o a una <strong>cadena vacía</strong> "".</p>
+<p>Hasta que apareció el operador <code>delete</code> en las versiones más modernas de navegadores, no se podía eliminar completamente una posición del <span lang="en">array</span>.</p>
+<p><em> Al borrar un elemento del <span lang="en">array</span>, se eliminará su índice en la lista de índices del <span lang="en">array</span>, pero no se reducirá la longitud del <span lang="en">array</span></em>. Por ejemplo en las siguientes instrucciones:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>elarray.length;          //  resultado: 8</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>delete elarray[5];</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>elarray.length;          //  resultado: 8</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>elarray[5];          //  resultado:  undefined</code></span></pre>
+</div>
+</div>
+<p style="text-align: justify;">El proceso de borrar una entrada del <span lang="en">array</span> no libera la memoria ocupada por esos datos necesariamente. El intérprete de <span lang="en">JavaScript</span>, encargado de gestionar la colección de basura en memoria, se encargará de liberar memoria ocupada cuando la necesite.</p>
+<p style="text-align: justify;">Si se quiere tener un mayor control sobre la eliminación de elementos de un <span lang="en">array</span>, deberías considerar usar el método <code>splice(índice, número de elementos a eliminar)</code>, que está soportado por la mayoría de los navegadores. Este método se puede usar en cualquier <span lang="en">array</span>, y te permite eliminar un elemento o una secuencia de elementos de un <span lang="en">array</span>, provocando que la longitud del <span lang="en">array</span> se ajuste al nuevo número de elementos.</p>
+<p>El operador <code>delete</code> es compatible a partir de estas versiones : <span lang="en">WinIE4</span> + , <span lang="en">MacIE4</span> + , <span lang="en">NN4</span> + , <span lang="en">Moz</span> + , <span lang="en">Safari</span> + , <span lang="en">Opera</span> + , <span lang="en">Chrome</span> +.</p>
+<p><strong>Ejemplo de uso del operador <code>delete</code></strong>:</p>
+<p>Si consideramos el siguiente <strong><span lang="en">array</span> denso</strong>:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>var  oceanos = new  array("Atlantico","Pacifico","Artico","Indico");</code></span></pre>
+</div>
+</div>
+<p>Esta clase de <span lang="en">array</span> asigna automáticamente índices numéricos a sus entradas, para poder acceder posteriormente a los datos, como por ejemplo con un bucle:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>for  (var  i=0; i &lt; oceanos.length;  i++)</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>{</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     if  (oceanos[i] == "Atlantico")</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     {</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>          //  instrucciones a realizar..</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>     }</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>}</code></span></pre>
+</div>
+</div>
+<p>Si ejecutamos la instrucción:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>delete oceanos[2];</code></span></pre>
+</div>
+</div>
+<p>Se producirán los siguientes cambios: en primer lugar el tercer elemento del <span lang="en">array</span> ("Artico"), será eliminado del mismo, pero la longitud del <span lang="en">array</span> seguirá siendo la misma, y el <span lang="en">array</span> quedará tal y como:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>oceanos[0] = "Atlantico";</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>oceanos[1] = "Pacifico";</code></span></pre>
+<pre><span style="font-size: 10pt;"><code>oceanos[3] = "Indico";</code></span></pre>
+</div>
+</div>
+<p>Si intentamos referenciar <code>oceanos[2]</code> nos devolverá un resultado indefinido (<span lang="en">undefined</span>).</p>
+<p>Si queremos eliminar la tercera posición y que el <span lang="en">array</span> reduzca su tamaño podríamos hacerlo con la instrucción:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><span style="font-size: 10pt;"><code>oceanos.splice(2,1); // las posiciones del array resultante serán 0, 1 y 2.</code></span></pre>
+</div>
+</div>
+<p>El operador <code>delete</code>, se recomienda para <span lang="en">arrays</span> que usen texto como índices del <span lang="en">array</span>, ya que de esta forma se producirán menos confusiones a la hora de borrar los elementos.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="112_recorrido_de_un_array.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="114_propiedades_y_mtodos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
